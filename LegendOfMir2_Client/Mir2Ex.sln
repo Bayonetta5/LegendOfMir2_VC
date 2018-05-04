@@ -1,30 +1,27 @@
-Microsoft Visual Studio Solution File, Format Version 8.00
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Mir2Ex", "Mir2Ex.vcproj", "{31429DB6-45B6-4FB2-8033-ED763327D8EC}"
-	ProjectSection(ProjectDependencies) = postProject
-		{F0DC5967-236F-413B-A2FC-82316FE8C1CB} = {F0DC5967-236F-413B-A2FC-82316FE8C1CB}
-	EndProjectSection
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Mir2Ex", "Mir2Ex.vcxproj", "{31429DB6-45B6-4FB2-8033-ED763327D8EC}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WindHorn", "WindHorn\WindHorn.vcproj", "{F0DC5967-236F-413B-A2FC-82316FE8C1CB}"
-	ProjectSection(ProjectDependencies) = postProject
-	EndProjectSection
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WindHorn", "WindHorn\WindHorn.vcxproj", "{F0DC5967-236F-413B-A2FC-82316FE8C1CB}"
 EndProject
 Global
-	GlobalSection(SolutionConfiguration) = preSolution
-		Debug = Debug
-		Release = Release
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
 	EndGlobalSection
-	GlobalSection(ProjectConfiguration) = postSolution
-		{31429DB6-45B6-4FB2-8033-ED763327D8EC}.Debug.ActiveCfg = Debug|Win32
-		{31429DB6-45B6-4FB2-8033-ED763327D8EC}.Debug.Build.0 = Debug|Win32
-		{31429DB6-45B6-4FB2-8033-ED763327D8EC}.Release.ActiveCfg = Release|Win32
-		{31429DB6-45B6-4FB2-8033-ED763327D8EC}.Release.Build.0 = Release|Win32
-		{F0DC5967-236F-413B-A2FC-82316FE8C1CB}.Debug.ActiveCfg = Debug|Win32
-		{F0DC5967-236F-413B-A2FC-82316FE8C1CB}.Debug.Build.0 = Debug|Win32
-		{F0DC5967-236F-413B-A2FC-82316FE8C1CB}.Release.ActiveCfg = Release|Win32
-		{F0DC5967-236F-413B-A2FC-82316FE8C1CB}.Release.Build.0 = Release|Win32
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31429DB6-45B6-4FB2-8033-ED763327D8EC}.Debug|x86.ActiveCfg = Debug|Win32
+		{31429DB6-45B6-4FB2-8033-ED763327D8EC}.Debug|x86.Build.0 = Debug|Win32
+		{31429DB6-45B6-4FB2-8033-ED763327D8EC}.Release|x86.ActiveCfg = Release|Win32
+		{31429DB6-45B6-4FB2-8033-ED763327D8EC}.Release|x86.Build.0 = Release|Win32
+		{F0DC5967-236F-413B-A2FC-82316FE8C1CB}.Debug|x86.ActiveCfg = Debug|Win32
+		{F0DC5967-236F-413B-A2FC-82316FE8C1CB}.Debug|x86.Build.0 = Debug|Win32
+		{F0DC5967-236F-413B-A2FC-82316FE8C1CB}.Release|x86.ActiveCfg = Release|Win32
+		{F0DC5967-236F-413B-A2FC-82316FE8C1CB}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-	EndGlobalSection
-	GlobalSection(ExtensibilityAddIns) = postSolution
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal

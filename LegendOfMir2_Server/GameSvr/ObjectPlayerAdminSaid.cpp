@@ -6,12 +6,13 @@ void InitAdminCommandList()
 {
 	TCHAR	szCommand[64];
 	int		nLen;
+	int i = 0;
 
 	HINSTANCE hInstance = LoadLibrary(_T("AdminCmd.DLL"));
 
 	if (hInstance)
 	{
-		for (int i = 0; i < _MAX_ADMINCOMMAND_LIST; i++)
+		for (i = 0; i < _MAX_ADMINCOMMAND_LIST; i++)
 		{
 			LoadString(hInstance, IDS_COMMAND_MONGEN + i, szCommand, sizeof(szCommand)/sizeof(TCHAR));
 

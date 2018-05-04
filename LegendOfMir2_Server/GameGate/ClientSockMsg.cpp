@@ -243,7 +243,7 @@ LPARAM OnClientSockMsg(WPARAM wParam, LPARAM lParam)
 
 			break;
 		}
-/*		case FD_CLOSE:
+		case FD_CLOSE:
 		{
 			closesocket(g_csock);
 			g_csock = INVALID_SOCKET;
@@ -269,7 +269,7 @@ LPARAM OnClientSockMsg(WPARAM wParam, LPARAM lParam)
 
 			break;
 		}
-*/	}
+	}
 
 	return 0L;
 }

@@ -57,12 +57,13 @@ int  WINAPI fnDecode6BitBufW(TCHAR *pwszSrc, char *pszDest, int nDestLen)
 	int				nDestPos = 0, nBitPos = 2;
 	int				nMadeBit = 0;
 	unsigned char	ch, chCode, tmp;
+	int i = 0;
 	
 	char			*pszSrc = new char[nLen + 1];
 
 	WideCharToMultiByte(CP_ACP, 0, pwszSrc, -1, pszSrc, sizeof(pszSrc), NULL, NULL);
 
-	for (int i = 0; i < nLen; i++)
+	for (i = 0; i < nLen; i++)
 	{
 		if ((pszSrc[i] - 0x3c) >= 0)
 			ch = pszSrc[i] - 0x3c;

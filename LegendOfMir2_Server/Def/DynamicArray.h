@@ -57,7 +57,7 @@ template <class T> CWHDynamicArray<T>::~CWHDynamicArray()
 template <class T> int CWHDynamicArray<T>::GetAvailablePosition()
 {
 	int nIndex = -1;
-
+	int i = 0;
 	nIndex = m_nLastRemoveIndex;
 
 	if (m_IsAvElements[nIndex] == FALSE)

@@ -465,7 +465,7 @@ void CLoginProcess::OnSocketMessageRecieve(char *pszMsg)
 			m_xSelectSrv.OpenWnd();
 			m_Progress = PRG_SERVER_SELE;
 			Clear(RGB(0,0,0));
-//			g_xClientSocket.OnSelectServer(NULL);
+			g_xClientSocket.OnSelectServer(NULL);
 
 			break;
 		}
@@ -683,7 +683,7 @@ VOID CLoginProcess::RenderScene(INT nLoopTime)
 			case PRG_NEW_ACCOUNT:
 			{
 				ShowWindow(g_xChatEditBox.GetSafehWnd(),( m_xMsgBox.IsActive() ? SW_HIDE : SW_SHOW ));
-//				RenderNewAccount(nLoopTime);
+				RenderNewAccount(nLoopTime);
 				break;
 			}
 			// Render For Change Password
@@ -725,7 +725,7 @@ VOID CLoginProcess::RenderIntro(INT nLoopTime)
 
 VOID CLoginProcess::RenderNewAccount(int nLoopTime)
 {
-	/*char Pass[10];
+	char Pass[10];
 
 	MoveWindow(g_xChatEditBox.GetSafehWnd(),
 						g_xMainWnd.m_rcWindow.left + g_LoginInputState[m_UserState+2].Left,
@@ -767,7 +767,7 @@ VOID CLoginProcess::RenderNewAccount(int nLoopTime)
 			memset(Pass,'*',strlen(g_LoginInputState[i].szData));
 			g_xMainWnd.PutsHan(NULL, g_LoginInputState[i].Left +2, g_LoginInputState[i].Top +2, RGB(255,255,255), RGB(0,0,0), Pass);
 		}
-	}*/
+	}
 }
 
 

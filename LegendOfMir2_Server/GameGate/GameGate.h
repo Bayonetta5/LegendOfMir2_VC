@@ -8,7 +8,7 @@ public:
 	SOCKET			sock;
 //	SOCKADDR_IN		addr;
 
-	int				nServerUserIndex;
+	int				nServerUserIndex;//服务端返回的用户标识符
 	int				nGateIndex;
 	
 	BOOL			fLoginCode;

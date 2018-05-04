@@ -8,8 +8,9 @@ void InitUserCommandList()
 {
 	TCHAR	szCommand[64];
 	int		nLen;
+	int i = 0;
 
-	for (int i = 0; i < _MAX_USERCOMMAND_LIST; i++)
+	for (i = 0; i < _MAX_USERCOMMAND_LIST; i++)
 	{
 		LoadString(g_hInst, IDS_USERCMD_NOWHISPER1 + i, szCommand, sizeof(szCommand)/sizeof(TCHAR));
 

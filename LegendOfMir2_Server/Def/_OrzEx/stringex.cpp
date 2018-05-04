@@ -197,6 +197,7 @@ bstr operator + ( char *str1, bstr &str2 )
 
 char * _memstr( char *buf, int buf_len, char *str )
 {
+	int i = 0;
 	int str_len = strlen( str );
 	int str_idx = 0;
 
@@ -224,8 +225,8 @@ char * _memistr( char *buf, int buf_len, char *str )
 {
 	int str_len = strlen( str );
 	int str_idx = 0;
-
-	for ( int i = 0; i < buf_len; i++ )
+	int i = 0;
+	for ( i= 0; i < buf_len; i++ )
 	{
 		if ( str_idx == str_len )
 			return (char *)(buf + i - str_len);

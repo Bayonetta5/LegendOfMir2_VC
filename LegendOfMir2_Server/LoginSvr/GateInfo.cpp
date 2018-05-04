@@ -540,12 +540,12 @@ void CGateInfo::ProcLogin(SOCKET s, char *pszData)
 				else
 				{
 					int nCertCode = atoi( pRec->Get( "FLD_CERTIFICATION" ) );
-		/*
+		
 					if ( nCertCode > 0 && nCertCode < 30 )
 						fnMakeDefMessageA(&DefMsg, SM_CERTIFICATION_FAIL, (nCertCode + 1), 0, 0, 0);
 					else if ( nCertCode >= 30 )
 						fnMakeDefMessageA(&DefMsg, SM_CERTIFICATION_FAIL, 1, 0, 0, 0);
-					else*/
+					else
 					{
 						char szEncodeServerList[512];
 						char szEncodeAllPacket[1024];
@@ -566,13 +566,13 @@ void CGateInfo::ProcLogin(SOCKET s, char *pszData)
 
 						pUserInfo->nCertification = GetCertification();
 
-		//				pRec = GetDBManager()->CreateRecordset();
-		//				sprintf( szQuery, 
-		//					"UPDATE TBL_ACCOUNT SET FLD_CERTIFICATION=%d WHERE FLD_LOGINID='%s'",
-		//					GetCertification(), pszID );
-		//				pRec->Execute( szQuery );
-						
-		//				GetDBManager()->DestroyRecordset( pRec );
+						pRec = GetDBManager()->CreateRecordset();
+						sprintf(szQuery,
+							"UPDATE TBL_ACCOUNT SET FLD_CERTIFICATION=%d WHERE FLD_LOGINID='%s'",
+							GetCertification(), pszID);
+						pRec->Execute(szQuery);
+
+						GetDBManager()->DestroyRecordset(pRec);
 
 						return;
 					}

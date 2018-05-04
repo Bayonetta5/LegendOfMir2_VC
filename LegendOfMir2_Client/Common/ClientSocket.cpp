@@ -89,7 +89,7 @@ BOOL CClientSocket::DisconnectToServer()
 	return FALSE;
 }
 
-/*
+
 VOID CClientSocket::SendToServer(CHAR *pszPacket)
 {
 	CHAR				szPacket[1024];
@@ -103,7 +103,7 @@ VOID CClientSocket::SendToServer(CHAR *pszPacket)
 
 	send(m_sockClient, szPacket, lstrlen(szPacket), 0);
 }
-*/
+
 
 VOID CClientSocket::SendActMsg(WORD wIdent, INT nX, INT nY, INT nDir)
 {

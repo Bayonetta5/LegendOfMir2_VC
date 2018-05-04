@@ -211,10 +211,8 @@ LPARAM APIENTRY MainWndProc(HWND hWnd, UINT nMsg, WPARAM wParam, LPARAM lParam)
 {
 	switch (nMsg)
 	{
-#ifdef _SOCKET_ASYNC_IO
 		case _IDM_SERVERSOCK_MSG:
 			return OnServerSockMsg(wParam, lParam);
-#endif
 		case _IDM_CLIENTSOCK_MSG:
 			return OnClientSockMsg(wParam, lParam);
 		case _IDM_LOGSVRSOCK_MSG:

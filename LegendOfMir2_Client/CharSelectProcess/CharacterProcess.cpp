@@ -503,7 +503,7 @@ void CCharacterProcess::OnSocketMessageRecieve(char* pszMsg)
 			break;
 		}
 	}
-/*	_TDEFAULTMESSAGE	tdm;
+	_TDEFAULTMESSAGE	tdm;
 	char				szDecodeMsg[256];
 	char				szTmpDecodeMsg[512];
 
@@ -663,7 +663,7 @@ void CCharacterProcess::OnSocketMessageRecieve(char* pszMsg)
 		}
 		break;
 	}
-	return 0L; */
+	return 0L; 
 }
 		/**/
 VOID CCharacterProcess::RenderScene(INT nLoopTime)

@@ -162,14 +162,14 @@ BOOL LoadPlayer(CReadyUserInfo2* pReadyUserInfo, CUserInfo* pUserInfo)
 			}
 		}
 
-/*		if (DefMsg.wTag)		// Decode Horse
+		if (DefMsg.wTag)		// Decode Horse
 		{
 			if (!pReadUserInfo->m_pUserInfo->m_lpTHorseRcd)
 				pReadUserInfo->m_pUserInfo->m_lpTHorseRcd = new _THORSERCD;
 
 			fnDecode6BitBufA(pszData, (char *)pReadUserInfo->m_pUserInfo->m_lpTHorseRcd, sizeof(_THORSERCD));
 		}
-*/
+
 		pUserInfo->m_pxPlayerObject->MakeFeature();
 		pUserInfo->m_pxPlayerObject->Initialize();
 		pUserInfo->m_pxPlayerObject->m_fIsAlive	= TRUE;

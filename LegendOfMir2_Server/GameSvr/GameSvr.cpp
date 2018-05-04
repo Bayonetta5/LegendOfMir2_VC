@@ -168,7 +168,7 @@ BOOL InitInstance(HANDLE hInstance, int nCmdShow)
 	lvc.fmt		= LVCFMT_LEFT;
 	lvc.cx		= 150;
 	lvc.pszText	= szText;
-
+	int i = 0;
 	for (i = 0; i < 3; i++)
 	{
 		lvc.iSubItem = i;
