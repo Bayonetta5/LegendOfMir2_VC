@@ -1,0 +1,183 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_TOOLBAR             BITMAP  DISCARDABLE     ".\\Res\\toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MIR2                ICON    DISCARDABLE     ".\\Res\\MIR2.ICO"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "&Service"
+    BEGIN
+        MENUITEM "&Start Service",              IDM_STARTSERVICE
+        MENUITEM "S&top Service",               IDM_STOPSERVICE, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Configuration",              IDM_CONFIG
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CONFIGDLG DIALOG DISCARDABLE  0, 0, 187, 143
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Database Server Configuration"
+FONT 9, "굴림"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,71,122,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,122,50,14
+    CONTROL         "IPAddress1",IDC_DBMS_IP,"SysIPAddress32",WS_TABSTOP,65,
+                    29,90,11
+    EDITTEXT        IDC_DBMS_PORT,65,43,28,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Address :",-1,29,31,35,8
+    GROUPBOX        "SQL Server Information",-1,15,15,158,83
+    LTEXT           "Port :",-1,43,45,21,9
+    LTEXT           "ID : ",-1,30,81,14,8
+    EDITTEXT        IDC_DBMS_ID,46,78,28,14,ES_AUTOHSCROLL
+    LTEXT           "Password :",-1,82,81,38,8
+    EDITTEXT        IDC_DBMS_PASSWORD,123,78,40,14,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Database :",-1,25,60,36,8
+    EDITTEXT        IDC_DBMS_DEVICE,65,58,82,14,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_CONFIGDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 136
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_NOTWINNT            "You are not running a NT-Kernel based operating system. Please install Windows NT4/2000/XP/2003/Longhorn."
+    IDS_LVS_LABEL1          "Date"
+    IDS_LVS_LABEL2          "Time"
+    IDS_LVS_LABEL3          "Message"
+    IDS_STARTSERVICE        "Service started."
+    IDS_STOPSERVICE         "Service stopped"
+    IDS_CONNECT_LOGINSERVER "Connected to Login Server."
+    IDS_DISCONNECT_LOGINSERVER "Disconnected from Login Server"
+    IDS_PROGRAM_QUIT        "Are you sure you wish to quit the database server?"
+    IDS_PROGRAM_TITLE       "The Legend of Mir 2 - Database Server."
+    IDS_CANT_CONNECT        "Unable to connect."
+    IDS_CONFLVS_LABEL1      "서버명"
+    IDS_CONFLVS_LABEL2      "타이틀"
+    IDS_CONFLVS_LABEL3      "로그인 게이트 내부 IP 주소"
+    IDS_CONFLVS_LABEL4      "로그인 게이트 외부 IP 주소"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CONFLVS_LABEL5      "게임 게이트 외부 IP 주소"
+    IDS_TAB_LABEL1          "서버 설정"
+    IDS_ACCEPT_GATESERVER   "(%s) Connected to Gate Server"
+    IDS_OPEN_USER           "Open user (%s) "
+    IDS_CLOSE_USER          "Close user (%s)"
+    IDS_CONNECTDB           "Connected to database."
+    IDS_LOADACCOUNTRECORDS  "Load Account Record"
+    IDS_BOUNDACCOUNTRECORDS "%d Account records bound."
+    IDS_COMPLETENEWUSER     "New ID [ %s ] Created."
+END
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

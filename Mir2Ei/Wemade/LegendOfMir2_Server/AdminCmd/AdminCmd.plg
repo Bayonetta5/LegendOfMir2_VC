@@ -1,0 +1,1376 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: AdminCmd - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x412 /fo"Release/AdminCmd.res" /d "NDEBUG" "C:\LegendOfMir2_Server020418\AdminCmd\AdminCmd.rc"" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP88.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "ADMINCMD_EXPORTS" /Fp"Release/AdminCmd.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\LegendOfMir2_Server020418\AdminCmd\AdminCmd.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP88.tmp" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP89.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "ADMINCMD_EXPORTS" /Fp"Release/AdminCmd.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\LegendOfMir2_Server020418\AdminCmd\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP89.tmp" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8A.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"Release/AdminCmd.pdb" /machine:I386 /out:"Release/AdminCmd.dll" /implib:"Release/AdminCmd.lib" 
+.\Release\AdminCmd.obj
+.\Release\StdAfx.obj
+.\Release\AdminCmd.res
+]
+Creating command line "link.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8A.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+AdminCmd.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+AdminCmd.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: AdminCmd - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x412 /fo"../_Obj_Debug/AdminCmd/AdminCmd.res" /d "_DEBUG" "C:\LegendOfMir2_Server020418\AdminCmd\AdminCmd.rc"" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8C.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "ADMINCMD_EXPORTS" /Fp"../_Obj_Debug/AdminCmd/AdminCmd.pch" /Yu"stdafx.h" /Fo"../_Obj_Debug/AdminCmd/" /Fd"../_Obj_Debug/AdminCmd/" /FD /GZ /c 
+"C:\LegendOfMir2_Server020418\AdminCmd\AdminCmd.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8C.tmp" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8D.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "ADMINCMD_EXPORTS" /Fp"../_Obj_Debug/AdminCmd/AdminCmd.pch" /Yc"stdafx.h" /Fo"../_Obj_Debug/AdminCmd/" /Fd"../_Obj_Debug/AdminCmd/" /FD /GZ /c 
+"C:\LegendOfMir2_Server020418\AdminCmd\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8D.tmp" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8E.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:yes /pdb:"../_Bin/Debug/AdminCmd.pdb" /debug /machine:I386 /out:"../_Bin/Debug/AdminCmd.dll" /implib:"../_Bin/Debug/AdminCmd.lib" /pdbtype:sept 
+\LegendOfMir2_Server020418\_Obj_Debug\AdminCmd\AdminCmd.obj
+\LegendOfMir2_Server020418\_Obj_Debug\AdminCmd\StdAfx.obj
+\LegendOfMir2_Server020418\_Obj_Debug\AdminCmd\AdminCmd.res
+]
+Creating command line "link.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8E.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+AdminCmd.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+AdminCmd.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: DBSvr - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x412 /fo"../_Obj_Release/DBSvr/DBSvr.res" /d "NDEBUG" "C:\LegendOfMir2_Server020418\DBSvr\DBSvr.rc"" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP90.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"../_Obj_Release/DBSvr/DBSvr.pch" /Yu"stdafx.h" /Fo"../_Obj_Release/DBSvr/" /Fd"../_Obj_Release/DBSvr/" /FD /c 
+"C:\LegendOfMir2_Server020418\DBSvr\ConfigDlgFunc.cpp"
+"C:\LegendOfMir2_Server020418\Def\dbmgr.cpp"
+"C:\LegendOfMir2_Server020418\DBSvr\DBSvr.cpp"
+"C:\LegendOfMir2_Server020418\DBSvr\GameGateSockMsg.cpp"
+"C:\LegendOfMir2_Server020418\DBSvr\GateCommSockMsg.cpp"
+"C:\LegendOfMir2_Server020418\DBSvr\GateInfo.cpp"
+"C:\LegendOfMir2_Server020418\DBSvr\GlobalUserList.cpp"
+"C:\LegendOfMir2_Server020418\DBSvr\MainWndProc.cpp"
+"C:\LegendOfMir2_Server020418\Def\Misc.cpp"
+"C:\LegendOfMir2_Server020418\DBSvr\ProcessDBMsg.cpp"
+"C:\LegendOfMir2_Server020418\DBSvr\ProcessGateMsg.cpp"
+"C:\LegendOfMir2_Server020418\DBSvr\ProcessServerMsg.cpp"
+"C:\LegendOfMir2_Server020418\DBSvr\ServerCommSockMsg.cpp"
+"C:\LegendOfMir2_Server020418\DBSvr\TableList.cpp"
+"C:\LegendOfMir2_Server020418\Def\_OrzEx\util.cpp"
+"C:\LegendOfMir2_Server020418\Def\_OrzEx\database.cpp"
+"C:\LegendOfMir2_Server020418\Def\_OrzEx\error.cpp"
+"C:\LegendOfMir2_Server020418\Def\_OrzEx\prime.cpp"
+"C:\LegendOfMir2_Server020418\Def\_OrzEx\syncobj.cpp"
+"C:\LegendOfMir2_Server020418\Def\EnDecode.cpp"
+"C:\LegendOfMir2_Server020418\Def\RegstryHandler.cpp"
+"C:\LegendOfMir2_Server020418\Def\ServerSockHandler.cpp"
+"C:\LegendOfMir2_Server020418\Def\_OrzEx\stringex.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP90.tmp" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP91.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"../_Obj_Release/DBSvr/DBSvr.pch" /Yc"stdafx.h" /Fo"../_Obj_Release/DBSvr/" /Fd"../_Obj_Release/DBSvr/" /FD /c 
+"C:\LegendOfMir2_Server020418\DBSvr\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP91.tmp" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP92.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:no /pdb:"../_Bin/DBSvr/DBSvr.pdb" /machine:I386 /out:"../_Bin/DBSvr/DBSvr.exe" 
+\LegendOfMir2_Server020418\_Obj_Release\DBSvr\ConfigDlgFunc.obj
+\LegendOfMir2_Server020418\_Obj_Release\DBSvr\dbmgr.obj
+\LegendOfMir2_Server020418\_Obj_Release\DBSvr\DBSvr.obj
+\LegendOfMir2_Server020418\_Obj_Release\DBSvr\GameGateSockMsg.obj
+\LegendOfMir2_Server020418\_Obj_Release\DBSvr\GateCommSockMsg.obj
+\LegendOfMir2_Server020418\_Obj_Release\DBSvr\GateInfo.obj
+\LegendOfMir2_Server020418\_Obj_Release\DBSvr\GlobalUserList.obj
+\LegendOfMir2_Server020418\_Obj_Release\DBSvr\MainWndProc.obj
+\LegendOfMir2_Server020418\_Obj_Release\DBSvr\Misc.obj
+\LegendOfMir2_Server020418\_Obj_Release\DBSvr\ProcessDBMsg.obj
+\LegendOfMir2_Server020418\_Obj_Release\DBSvr\ProcessGateMsg.obj
+\LegendOfMir2_Server020418\_Obj_Release\DBSvr\ProcessServerMsg.obj
+\LegendOfMir2_Server020418\_Obj_Release\DBSvr\ServerCommSockMsg.obj
+\LegendOfMir2_Server020418\_Obj_Release\DBSvr\StdAfx.obj
+\LegendOfMir2_Server020418\_Obj_Release\DBSvr\TableList.obj
+\LegendOfMir2_Server020418\_Obj_Release\DBSvr\util.obj
+\LegendOfMir2_Server020418\_Obj_Release\DBSvr\database.obj
+\LegendOfMir2_Server020418\_Obj_Release\DBSvr\error.obj
+\LegendOfMir2_Server020418\_Obj_Release\DBSvr\prime.obj
+\LegendOfMir2_Server020418\_Obj_Release\DBSvr\syncobj.obj
+\LegendOfMir2_Server020418\_Obj_Release\DBSvr\EnDecode.obj
+\LegendOfMir2_Server020418\_Obj_Release\DBSvr\RegstryHandler.obj
+\LegendOfMir2_Server020418\_Obj_Release\DBSvr\ServerSockHandler.obj
+\LegendOfMir2_Server020418\_Obj_Release\DBSvr\stringex.obj
+\LegendOfMir2_Server020418\_Obj_Release\DBSvr\DBSvr.res
+]
+Creating command line "link.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP92.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ConfigDlgFunc.cpp
+dbmgr.cpp
+DBSvr.cpp
+GameGateSockMsg.cpp
+GateCommSockMsg.cpp
+GateInfo.cpp
+GlobalUserList.cpp
+MainWndProc.cpp
+Misc.cpp
+ProcessDBMsg.cpp
+ProcessGateMsg.cpp
+ProcessServerMsg.cpp
+ServerCommSockMsg.cpp
+TableList.cpp
+util.cpp
+database.cpp
+error.cpp
+prime.cpp
+syncobj.cpp
+EnDecode.cpp
+Generating Code...
+Compiling...
+RegstryHandler.cpp
+ServerSockHandler.cpp
+stringex.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+DBSvr.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: DBSvr - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x412 /fo"../_Obj_Debug/DBSvr/DBSvr.res" /d "_DEBUG" "C:\LegendOfMir2_Server020418\DBSvr\DBSvr.rc"" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP94.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"../_Obj_Debug/DBSvr/" /Fp"../_Obj_Debug/DBSvr/DBSvr.pch" /Yu"stdafx.h" /Fo"../_Obj_Debug/DBSvr/" /Fd"../_Obj_Debug/DBSvr/" /FD /GZ /c 
+"C:\LegendOfMir2_Server020418\DBSvr\ConfigDlgFunc.cpp"
+"C:\LegendOfMir2_Server020418\Def\dbmgr.cpp"
+"C:\LegendOfMir2_Server020418\DBSvr\DBSvr.cpp"
+"C:\LegendOfMir2_Server020418\DBSvr\GameGateSockMsg.cpp"
+"C:\LegendOfMir2_Server020418\DBSvr\GateCommSockMsg.cpp"
+"C:\LegendOfMir2_Server020418\DBSvr\GateInfo.cpp"
+"C:\LegendOfMir2_Server020418\DBSvr\GlobalUserList.cpp"
+"C:\LegendOfMir2_Server020418\DBSvr\MainWndProc.cpp"
+"C:\LegendOfMir2_Server020418\Def\Misc.cpp"
+"C:\LegendOfMir2_Server020418\DBSvr\ProcessDBMsg.cpp"
+"C:\LegendOfMir2_Server020418\DBSvr\ProcessGateMsg.cpp"
+"C:\LegendOfMir2_Server020418\DBSvr\ProcessServerMsg.cpp"
+"C:\LegendOfMir2_Server020418\DBSvr\ServerCommSockMsg.cpp"
+"C:\LegendOfMir2_Server020418\DBSvr\TableList.cpp"
+"C:\LegendOfMir2_Server020418\Def\_OrzEx\util.cpp"
+"C:\LegendOfMir2_Server020418\Def\_OrzEx\database.cpp"
+"C:\LegendOfMir2_Server020418\Def\_OrzEx\error.cpp"
+"C:\LegendOfMir2_Server020418\Def\_OrzEx\prime.cpp"
+"C:\LegendOfMir2_Server020418\Def\_OrzEx\syncobj.cpp"
+"C:\LegendOfMir2_Server020418\Def\EnDecode.cpp"
+"C:\LegendOfMir2_Server020418\Def\RegstryHandler.cpp"
+"C:\LegendOfMir2_Server020418\Def\ServerSockHandler.cpp"
+"C:\LegendOfMir2_Server020418\Def\_OrzEx\stringex.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP94.tmp" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP95.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"../_Obj_Debug/DBSvr/" /Fp"../_Obj_Debug/DBSvr/DBSvr.pch" /Yc"stdafx.h" /Fo"../_Obj_Debug/DBSvr/" /Fd"../_Obj_Debug/DBSvr/" /FD /GZ /c 
+"C:\LegendOfMir2_Server020418\DBSvr\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP95.tmp" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP96.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:yes /pdb:"../_Bin/Debug/DBSvr.pdb" /debug /machine:I386 /out:"../_Bin/Debug/DBSvr.exe" /pdbtype:sept 
+\LegendOfMir2_Server020418\_Obj_Debug\DBSvr\ConfigDlgFunc.obj
+\LegendOfMir2_Server020418\_Obj_Debug\DBSvr\dbmgr.obj
+\LegendOfMir2_Server020418\_Obj_Debug\DBSvr\DBSvr.obj
+\LegendOfMir2_Server020418\_Obj_Debug\DBSvr\GameGateSockMsg.obj
+\LegendOfMir2_Server020418\_Obj_Debug\DBSvr\GateCommSockMsg.obj
+\LegendOfMir2_Server020418\_Obj_Debug\DBSvr\GateInfo.obj
+\LegendOfMir2_Server020418\_Obj_Debug\DBSvr\GlobalUserList.obj
+\LegendOfMir2_Server020418\_Obj_Debug\DBSvr\MainWndProc.obj
+\LegendOfMir2_Server020418\_Obj_Debug\DBSvr\Misc.obj
+\LegendOfMir2_Server020418\_Obj_Debug\DBSvr\ProcessDBMsg.obj
+\LegendOfMir2_Server020418\_Obj_Debug\DBSvr\ProcessGateMsg.obj
+\LegendOfMir2_Server020418\_Obj_Debug\DBSvr\ProcessServerMsg.obj
+\LegendOfMir2_Server020418\_Obj_Debug\DBSvr\ServerCommSockMsg.obj
+\LegendOfMir2_Server020418\_Obj_Debug\DBSvr\StdAfx.obj
+\LegendOfMir2_Server020418\_Obj_Debug\DBSvr\TableList.obj
+\LegendOfMir2_Server020418\_Obj_Debug\DBSvr\util.obj
+\LegendOfMir2_Server020418\_Obj_Debug\DBSvr\database.obj
+\LegendOfMir2_Server020418\_Obj_Debug\DBSvr\error.obj
+\LegendOfMir2_Server020418\_Obj_Debug\DBSvr\prime.obj
+\LegendOfMir2_Server020418\_Obj_Debug\DBSvr\syncobj.obj
+\LegendOfMir2_Server020418\_Obj_Debug\DBSvr\EnDecode.obj
+\LegendOfMir2_Server020418\_Obj_Debug\DBSvr\RegstryHandler.obj
+\LegendOfMir2_Server020418\_Obj_Debug\DBSvr\ServerSockHandler.obj
+\LegendOfMir2_Server020418\_Obj_Debug\DBSvr\stringex.obj
+\LegendOfMir2_Server020418\_Obj_Debug\DBSvr\DBSvr.res
+]
+Creating command line "link.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP96.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ConfigDlgFunc.cpp
+dbmgr.cpp
+DBSvr.cpp
+GameGateSockMsg.cpp
+GateCommSockMsg.cpp
+GateInfo.cpp
+GlobalUserList.cpp
+MainWndProc.cpp
+Misc.cpp
+ProcessDBMsg.cpp
+ProcessGateMsg.cpp
+ProcessServerMsg.cpp
+ServerCommSockMsg.cpp
+TableList.cpp
+util.cpp
+database.cpp
+error.cpp
+prime.cpp
+syncobj.cpp
+EnDecode.cpp
+Generating Code...
+Compiling...
+RegstryHandler.cpp
+ServerSockHandler.cpp
+stringex.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+DBSvr.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: GameGate - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x412 /fo"Release/GameGate.res" /d "NDEBUG" "C:\LegendOfMir2_Server020418\GameGate\GameGate.rc"" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP98.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/GameGate.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\LegendOfMir2_Server020418\GameGate\Abusive.cpp"
+"C:\LegendOfMir2_Server020418\GameGate\ClientSockMsg.cpp"
+"C:\LegendOfMir2_Server020418\GameGate\ConfigDlgFunc.cpp"
+"C:\LegendOfMir2_Server020418\Def\EnDecode.cpp"
+"C:\LegendOfMir2_Server020418\GameGate\GameGate.cpp"
+"C:\LegendOfMir2_Server020418\GameGate\MainWndProc.cpp"
+"C:\LegendOfMir2_Server020418\Def\Misc.cpp"
+"C:\LegendOfMir2_Server020418\Def\RegstryHandler.cpp"
+"C:\LegendOfMir2_Server020418\Def\ServerSockHandler.cpp"
+"C:\LegendOfMir2_Server020418\GameGate\ServerSockMsg.cpp"
+"C:\LegendOfMir2_Server020418\Def\_OrzEx\syncobj.cpp"
+"C:\LegendOfMir2_Server020418\GameGate\ThreadFuncForComm.cpp"
+"C:\LegendOfMir2_Server020418\GameGate\ThreadFuncForMsg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP98.tmp" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP99.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/GameGate.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\LegendOfMir2_Server020418\GameGate\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP99.tmp" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP9A.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/GameGate.pdb" /machine:I386 /out:"Release/GameGate.exe" 
+.\Release\Abusive.obj
+.\Release\ClientSockMsg.obj
+.\Release\ConfigDlgFunc.obj
+.\Release\EnDecode.obj
+.\Release\GameGate.obj
+.\Release\MainWndProc.obj
+.\Release\Misc.obj
+.\Release\RegstryHandler.obj
+.\Release\ServerSockHandler.obj
+.\Release\ServerSockMsg.obj
+.\Release\StdAfx.obj
+.\Release\syncobj.obj
+.\Release\ThreadFuncForComm.obj
+.\Release\ThreadFuncForMsg.obj
+.\Release\GameGate.res
+]
+Creating command line "link.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP9A.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+Abusive.cpp
+ClientSockMsg.cpp
+ConfigDlgFunc.cpp
+EnDecode.cpp
+GameGate.cpp
+MainWndProc.cpp
+Misc.cpp
+RegstryHandler.cpp
+ServerSockHandler.cpp
+ServerSockMsg.cpp
+syncobj.cpp
+ThreadFuncForComm.cpp
+ThreadFuncForMsg.cpp
+C:\LegendOfMir2_Server020418\GameGate\ThreadFuncForMsg.cpp(132) : error C2065: '_RPT2' : undeclared identifier
+C:\LegendOfMir2_Server020418\GameGate\ThreadFuncForMsg.cpp(132) : error C2065: '_CRT_WARN' : undeclared identifier
+Generating Code...
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+GameGate.exe - 2 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: GameGate - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x412 /fo"../_Obj_Debug/GameGate/GameGate.res" /d "_DEBUG" "C:\LegendOfMir2_Server020418\GameGate\GameGate.rc"" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP9B.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"../_Obj_Debug/GameGate/" /Fp"../_Obj_Debug/GameGate/GameGate.pch" /Yu"stdafx.h" /Fo"../_Obj_Debug/GameGate/" /Fd"../_Obj_Debug/GameGate/" /FD /GZ /c 
+"C:\LegendOfMir2_Server020418\GameGate\Abusive.cpp"
+"C:\LegendOfMir2_Server020418\GameGate\ClientSockMsg.cpp"
+"C:\LegendOfMir2_Server020418\GameGate\ConfigDlgFunc.cpp"
+"C:\LegendOfMir2_Server020418\Def\EnDecode.cpp"
+"C:\LegendOfMir2_Server020418\GameGate\GameGate.cpp"
+"C:\LegendOfMir2_Server020418\GameGate\MainWndProc.cpp"
+"C:\LegendOfMir2_Server020418\Def\Misc.cpp"
+"C:\LegendOfMir2_Server020418\Def\RegstryHandler.cpp"
+"C:\LegendOfMir2_Server020418\Def\ServerSockHandler.cpp"
+"C:\LegendOfMir2_Server020418\GameGate\ServerSockMsg.cpp"
+"C:\LegendOfMir2_Server020418\Def\_OrzEx\syncobj.cpp"
+"C:\LegendOfMir2_Server020418\GameGate\ThreadFuncForComm.cpp"
+"C:\LegendOfMir2_Server020418\GameGate\ThreadFuncForMsg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP9B.tmp" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP9C.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"../_Obj_Debug/GameGate/" /Fp"../_Obj_Debug/GameGate/GameGate.pch" /Yc"stdafx.h" /Fo"../_Obj_Debug/GameGate/" /Fd"../_Obj_Debug/GameGate/" /FD /GZ /c 
+"C:\LegendOfMir2_Server020418\GameGate\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP9C.tmp" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP9D.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:yes /pdb:"../_Bin/Debug/GameGate.pdb" /debug /machine:I386 /out:"../_Bin/Debug/GameGate.exe" /pdbtype:sept 
+\LegendOfMir2_Server020418\_Obj_Debug\GameGate\Abusive.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameGate\ClientSockMsg.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameGate\ConfigDlgFunc.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameGate\EnDecode.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameGate\GameGate.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameGate\MainWndProc.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameGate\Misc.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameGate\RegstryHandler.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameGate\ServerSockHandler.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameGate\ServerSockMsg.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameGate\StdAfx.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameGate\syncobj.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameGate\ThreadFuncForComm.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameGate\ThreadFuncForMsg.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameGate\GameGate.res
+]
+Creating command line "link.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP9D.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+Abusive.cpp
+ClientSockMsg.cpp
+ConfigDlgFunc.cpp
+EnDecode.cpp
+GameGate.cpp
+MainWndProc.cpp
+Misc.cpp
+RegstryHandler.cpp
+ServerSockHandler.cpp
+ServerSockMsg.cpp
+syncobj.cpp
+ThreadFuncForComm.cpp
+ThreadFuncForMsg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+GameGate.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: GameSvr - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x412 /fo"Release/GameSvr.res" /d "NDEBUG" "C:\LegendOfMir2_Server020418\GameSvr\GameSvr.rc"" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP9F.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /Fp"Release/GameSvr.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\LegendOfMir2_Server020418\GameSvr\ConfigDlgFunc.cpp"
+"C:\LegendOfMir2_Server020418\Def\_OrzEx\database.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\GameSvr.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\GateInfo.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\Global.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\Handler_CommonDB.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\Handler_Item.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\Handler_Magic.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\Handler_Map.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\MainWndProc.cpp"
+"C:\LegendOfMir2_Server020418\Def\Misc.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\ObjectEngine.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\ObjectEvent.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\ObjectMerchant.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\ObjectMonster.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\ObjectNPC.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\ObjectPlayer.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\ObjectPlayerAdmin.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\ObjectPlayerAdminSaid.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\ObjectPlayerClone.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\ObjectPlayerSaid.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\ObjectScripter.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\ProcessEvents.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\ProcessLogin.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\ProcessMerchants.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\ProcessMonster.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\ProcessNPC.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\ProcessUserHuman.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\ProcessUserMsg.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\SockMsg_DBSrv.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\SockMsg_GateComm.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\SockMsg_LogSvr.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\ThreadFuncForComm.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\UserInfo.cpp"
+"C:\LegendOfMir2_Server020418\Def\EnDecode.cpp"
+"C:\LegendOfMir2_Server020418\Def\RegstryHandler.cpp"
+"C:\LegendOfMir2_Server020418\Def\ServerSockHandler.cpp"
+"C:\LegendOfMir2_Server020418\Def\_OrzEx\syncobj.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP9F.tmp" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPA0.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /Fp"Release/GameSvr.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\LegendOfMir2_Server020418\GameSvr\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPA0.tmp" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPA1.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/GameSvr.pdb" /machine:I386 /out:"Release/GameSvr.exe" 
+.\Release\ConfigDlgFunc.obj
+.\Release\database.obj
+.\Release\GameSvr.obj
+.\Release\GateInfo.obj
+.\Release\Global.obj
+.\Release\Handler_CommonDB.obj
+.\Release\Handler_Item.obj
+.\Release\Handler_Magic.obj
+.\Release\Handler_Map.obj
+.\Release\MainWndProc.obj
+.\Release\Misc.obj
+.\Release\ObjectEngine.obj
+.\Release\ObjectEvent.obj
+.\Release\ObjectMerchant.obj
+.\Release\ObjectMonster.obj
+.\Release\ObjectNPC.obj
+.\Release\ObjectPlayer.obj
+.\Release\ObjectPlayerAdmin.obj
+.\Release\ObjectPlayerAdminSaid.obj
+.\Release\ObjectPlayerClone.obj
+.\Release\ObjectPlayerSaid.obj
+.\Release\ObjectScripter.obj
+.\Release\ProcessEvents.obj
+.\Release\ProcessLogin.obj
+.\Release\ProcessMerchants.obj
+.\Release\ProcessMonster.obj
+.\Release\ProcessNPC.obj
+.\Release\ProcessUserHuman.obj
+.\Release\ProcessUserMsg.obj
+.\Release\SockMsg_DBSrv.obj
+.\Release\SockMsg_GateComm.obj
+.\Release\SockMsg_LogSvr.obj
+.\Release\StdAfx.obj
+.\Release\ThreadFuncForComm.obj
+.\Release\UserInfo.obj
+.\Release\EnDecode.obj
+.\Release\RegstryHandler.obj
+.\Release\ServerSockHandler.obj
+.\Release\syncobj.obj
+.\Release\GameSvr.res
+]
+Creating command line "link.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPA1.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ConfigDlgFunc.cpp
+database.cpp
+GameSvr.cpp
+GateInfo.cpp
+Global.cpp
+Handler_CommonDB.cpp
+Handler_Item.cpp
+Handler_Magic.cpp
+Handler_Map.cpp
+MainWndProc.cpp
+C:\LegendOfMir2_Server020418\GameSvr\MainWndProc.cpp(178) : error C2065: '_beginthreadex' : undeclared identifier
+Misc.cpp
+ObjectEngine.cpp
+ObjectEvent.cpp
+ObjectMerchant.cpp
+ObjectMonster.cpp
+C:\LegendOfMir2_Server020418\GameSvr\ObjectMonster.cpp(129) : warning C4541: 'dynamic_cast' used on polymorphic type 'class CCharObject' with /GR-; unpredictable behavior may result
+C:\LegendOfMir2_Server020418\GameSvr\ObjectMonster.cpp(158) : warning C4541: 'dynamic_cast' used on polymorphic type 'class CCharObject' with /GR-; unpredictable behavior may result
+C:\LegendOfMir2_Server020418\GameSvr\ObjectMonster.cpp(292) : warning C4541: 'dynamic_cast' used on polymorphic type 'class CCharObject' with /GR-; unpredictable behavior may result
+C:\LegendOfMir2_Server020418\GameSvr\ObjectMonster.cpp(301) : warning C4541: 'dynamic_cast' used on polymorphic type 'class CCharObject' with /GR-; unpredictable behavior may result
+C:\LegendOfMir2_Server020418\GameSvr\ObjectMonster.cpp(307) : warning C4541: 'dynamic_cast' used on polymorphic type 'class CCharObject' with /GR-; unpredictable behavior may result
+C:\LegendOfMir2_Server020418\GameSvr\ObjectMonster.cpp(2282) : warning C4541: 'dynamic_cast' used on polymorphic type 'class CMonsterObject' with /GR-; unpredictable behavior may result
+C:\LegendOfMir2_Server020418\GameSvr\ObjectMonster.cpp(2366) : warning C4541: 'dynamic_cast' used on polymorphic type 'class CMonsterObject' with /GR-; unpredictable behavior may result
+ObjectNPC.cpp
+ObjectPlayer.cpp
+C:\LegendOfMir2_Server020418\GameSvr\ObjectPlayer.cpp(1594) : warning C4541: 'dynamic_cast' used on polymorphic type 'class CCharObject' with /GR-; unpredictable behavior may result
+ObjectPlayerAdmin.cpp
+ObjectPlayerAdminSaid.cpp
+ObjectPlayerClone.cpp
+Generating Code...
+Compiling...
+ObjectPlayerSaid.cpp
+ObjectScripter.cpp
+ProcessEvents.cpp
+ProcessLogin.cpp
+ProcessMerchants.cpp
+ProcessMonster.cpp
+ProcessNPC.cpp
+ProcessUserHuman.cpp
+ProcessUserMsg.cpp
+SockMsg_DBSrv.cpp
+C:\LegendOfMir2_Server020418\GameSvr\SockMsg_DBSrv.cpp(294) : error C2065: '_beginthreadex' : undeclared identifier
+SockMsg_GateComm.cpp
+SockMsg_LogSvr.cpp
+ThreadFuncForComm.cpp
+UserInfo.cpp
+EnDecode.cpp
+RegstryHandler.cpp
+ServerSockHandler.cpp
+syncobj.cpp
+Generating Code...
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+GameSvr.exe - 2 error(s), 8 warning(s)
+<h3>
+--------------------Configuration: GameSvr - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x412 /fo"../_Obj_Debug/GameSvr/GameSvr.res" /d "_DEBUG" "C:\LegendOfMir2_Server020418\GameSvr\GameSvr.rc"" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPA2.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GR /GX /ZI /Od /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /FR"../_Obj_Debug/GameSvr/" /Fp"../_Obj_Debug/GameSvr/GameSvr.pch" /Yu"stdafx.h" /Fo"../_Obj_Debug/GameSvr/" /Fd"../_Obj_Debug/GameSvr/" /FD /GZ /c 
+"C:\LegendOfMir2_Server020418\GameSvr\ConfigDlgFunc.cpp"
+"C:\LegendOfMir2_Server020418\Def\_OrzEx\database.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\GameSvr.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\GateInfo.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\Global.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\Handler_CommonDB.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\Handler_Item.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\Handler_Magic.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\Handler_Map.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\MainWndProc.cpp"
+"C:\LegendOfMir2_Server020418\Def\Misc.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\ObjectEngine.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\ObjectEvent.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\ObjectMerchant.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\ObjectMonster.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\ObjectNPC.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\ObjectPlayer.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\ObjectPlayerAdmin.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\ObjectPlayerAdminSaid.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\ObjectPlayerClone.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\ObjectPlayerSaid.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\ObjectScripter.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\ProcessEvents.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\ProcessLogin.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\ProcessMerchants.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\ProcessMonster.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\ProcessNPC.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\ProcessUserHuman.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\ProcessUserMsg.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\SockMsg_DBSrv.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\SockMsg_GateComm.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\SockMsg_LogSvr.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\ThreadFuncForComm.cpp"
+"C:\LegendOfMir2_Server020418\GameSvr\UserInfo.cpp"
+"C:\LegendOfMir2_Server020418\Def\EnDecode.cpp"
+"C:\LegendOfMir2_Server020418\Def\RegstryHandler.cpp"
+"C:\LegendOfMir2_Server020418\Def\ServerSockHandler.cpp"
+"C:\LegendOfMir2_Server020418\Def\_OrzEx\syncobj.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPA2.tmp" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPA3.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GR /GX /ZI /Od /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /FR"../_Obj_Debug/GameSvr/" /Fp"../_Obj_Debug/GameSvr/GameSvr.pch" /Yc"stdafx.h" /Fo"../_Obj_Debug/GameSvr/" /Fd"../_Obj_Debug/GameSvr/" /FD /GZ /c 
+"C:\LegendOfMir2_Server020418\GameSvr\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPA3.tmp" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPA4.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:yes /pdb:"../_Bin/Debug/GameSvr.pdb" /debug /machine:I386 /out:"../_Bin/Debug/GameSvr.exe" /pdbtype:sept 
+\LegendOfMir2_Server020418\_Obj_Debug\GameSvr\ConfigDlgFunc.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameSvr\database.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameSvr\GameSvr.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameSvr\GateInfo.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameSvr\Global.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameSvr\Handler_CommonDB.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameSvr\Handler_Item.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameSvr\Handler_Magic.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameSvr\Handler_Map.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameSvr\MainWndProc.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameSvr\Misc.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameSvr\ObjectEngine.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameSvr\ObjectEvent.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameSvr\ObjectMerchant.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameSvr\ObjectMonster.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameSvr\ObjectNPC.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameSvr\ObjectPlayer.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameSvr\ObjectPlayerAdmin.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameSvr\ObjectPlayerAdminSaid.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameSvr\ObjectPlayerClone.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameSvr\ObjectPlayerSaid.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameSvr\ObjectScripter.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameSvr\ProcessEvents.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameSvr\ProcessLogin.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameSvr\ProcessMerchants.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameSvr\ProcessMonster.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameSvr\ProcessNPC.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameSvr\ProcessUserHuman.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameSvr\ProcessUserMsg.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameSvr\SockMsg_DBSrv.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameSvr\SockMsg_GateComm.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameSvr\SockMsg_LogSvr.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameSvr\StdAfx.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameSvr\ThreadFuncForComm.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameSvr\UserInfo.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameSvr\EnDecode.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameSvr\RegstryHandler.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameSvr\ServerSockHandler.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameSvr\syncobj.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameSvr\GameSvr.res
+]
+Creating command line "link.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPA4.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ConfigDlgFunc.cpp
+database.cpp
+GameSvr.cpp
+GateInfo.cpp
+Global.cpp
+Handler_CommonDB.cpp
+Handler_Item.cpp
+Handler_Magic.cpp
+Handler_Map.cpp
+MainWndProc.cpp
+Misc.cpp
+ObjectEngine.cpp
+ObjectEvent.cpp
+ObjectMerchant.cpp
+ObjectMonster.cpp
+ObjectNPC.cpp
+ObjectPlayer.cpp
+ObjectPlayerAdmin.cpp
+ObjectPlayerAdminSaid.cpp
+ObjectPlayerClone.cpp
+Generating Code...
+Compiling...
+ObjectPlayerSaid.cpp
+ObjectScripter.cpp
+ProcessEvents.cpp
+ProcessLogin.cpp
+ProcessMerchants.cpp
+ProcessMonster.cpp
+ProcessNPC.cpp
+ProcessUserHuman.cpp
+ProcessUserMsg.cpp
+SockMsg_DBSrv.cpp
+SockMsg_GateComm.cpp
+SockMsg_LogSvr.cpp
+ThreadFuncForComm.cpp
+UserInfo.cpp
+EnDecode.cpp
+RegstryHandler.cpp
+ServerSockHandler.cpp
+syncobj.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+GameSvr.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: LoginGate - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x412 /fo"../_Obj_Release/LoginGate/LoginGate.res" /d "NDEBUG" "C:\LegendOfMir2_Server020418\LoginGate\LoginGate.rc"" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPA6.tmp" with contents
+[
+/nologo /MT /W3 /GX /O1 /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_SOCKET_ASYNC_IO" /Fp"../_Obj_Release/LoginGate/LoginGate.pch" /Yu"stdafx.h" /Fo"../_Obj_Release/LoginGate/" /Fd"../_Obj_Release/LoginGate/" /FD /c 
+"C:\LegendOfMir2_Server020418\LoginGate\ClientSockMsg.cpp"
+"C:\LegendOfMir2_Server020418\LoginGate\ConfigDlgFunc.cpp"
+"C:\LegendOfMir2_Server020418\LoginGate\LoginGate.cpp"
+"C:\LegendOfMir2_Server020418\LoginGate\MainWndProc.cpp"
+"C:\LegendOfMir2_Server020418\Def\Misc.cpp"
+"C:\LegendOfMir2_Server020418\Def\RegstryHandler.cpp"
+"C:\LegendOfMir2_Server020418\Def\ServerSockHandler.cpp"
+"C:\LegendOfMir2_Server020418\LoginGate\ServerSockMsg.cpp"
+"C:\LegendOfMir2_Server020418\Def\_OrzEx\syncobj.cpp"
+"C:\LegendOfMir2_Server020418\LoginGate\ThreadFuncForComm.cpp"
+"C:\LegendOfMir2_Server020418\LoginGate\ThreadFuncForMsg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPA6.tmp" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPA7.tmp" with contents
+[
+/nologo /MT /W3 /GX /O1 /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_SOCKET_ASYNC_IO" /Fp"../_Obj_Release/LoginGate/LoginGate.pch" /Yc"stdafx.h" /Fo"../_Obj_Release/LoginGate/" /Fd"../_Obj_Release/LoginGate/" /FD /c 
+"C:\LegendOfMir2_Server020418\LoginGate\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPA7.tmp" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPA8.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:no /pdb:"../_Bin/LoginGate/LoginGate.pdb" /machine:I386 /out:"../_Bin/LoginGate/LoginGate.exe" 
+\LegendOfMir2_Server020418\_Obj_Release\LoginGate\ClientSockMsg.obj
+\LegendOfMir2_Server020418\_Obj_Release\LoginGate\ConfigDlgFunc.obj
+\LegendOfMir2_Server020418\_Obj_Release\LoginGate\LoginGate.obj
+\LegendOfMir2_Server020418\_Obj_Release\LoginGate\MainWndProc.obj
+\LegendOfMir2_Server020418\_Obj_Release\LoginGate\Misc.obj
+\LegendOfMir2_Server020418\_Obj_Release\LoginGate\RegstryHandler.obj
+\LegendOfMir2_Server020418\_Obj_Release\LoginGate\ServerSockHandler.obj
+\LegendOfMir2_Server020418\_Obj_Release\LoginGate\ServerSockMsg.obj
+\LegendOfMir2_Server020418\_Obj_Release\LoginGate\StdAfx.obj
+\LegendOfMir2_Server020418\_Obj_Release\LoginGate\syncobj.obj
+\LegendOfMir2_Server020418\_Obj_Release\LoginGate\ThreadFuncForComm.obj
+\LegendOfMir2_Server020418\_Obj_Release\LoginGate\ThreadFuncForMsg.obj
+\LegendOfMir2_Server020418\_Obj_Release\LoginGate\LoginGate.res
+]
+Creating command line "link.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPA8.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ClientSockMsg.cpp
+ConfigDlgFunc.cpp
+LoginGate.cpp
+MainWndProc.cpp
+Misc.cpp
+RegstryHandler.cpp
+ServerSockHandler.cpp
+ServerSockMsg.cpp
+syncobj.cpp
+ThreadFuncForComm.cpp
+ThreadFuncForMsg.cpp
+Generating Code...
+Linking...
+LoginGate.obj : error LNK2001: unresolved external symbol "int __cdecl CheckAvailableIOCP(void)" (?CheckAvailableIOCP@@YAHXZ)
+MainWndProc.obj : error LNK2001: unresolved external symbol "void * g_hIOCP" (?g_hIOCP@@3PAXA)
+ServerSockMsg.obj : error LNK2001: unresolved external symbol "void * g_hIOCP" (?g_hIOCP@@3PAXA)
+../_Bin/LoginGate/LoginGate.exe : fatal error LNK1120: 2 unresolved externals
+Error executing link.exe.
+
+
+
+<h3>Results</h3>
+LoginGate.exe - 4 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: LoginGate - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x412 /fo"../_Obj_Debug/LoginGate/LoginGate.res" /d "_DEBUG" "C:\LegendOfMir2_Server020418\LoginGate\LoginGate.rc"" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPAA.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /FR"../_Obj_Debug/LoginGate/" /Fp"../_Obj_Debug/LoginGate/LoginGate.pch" /Yu"stdafx.h" /Fo"../_Obj_Debug/LoginGate/" /Fd"../_Obj_Debug/LoginGate/" /FD /GZ /c 
+"C:\LegendOfMir2_Server020418\LoginGate\ClientSockMsg.cpp"
+"C:\LegendOfMir2_Server020418\LoginGate\ConfigDlgFunc.cpp"
+"C:\LegendOfMir2_Server020418\LoginGate\LoginGate.cpp"
+"C:\LegendOfMir2_Server020418\LoginGate\MainWndProc.cpp"
+"C:\LegendOfMir2_Server020418\Def\Misc.cpp"
+"C:\LegendOfMir2_Server020418\Def\RegstryHandler.cpp"
+"C:\LegendOfMir2_Server020418\Def\ServerSockHandler.cpp"
+"C:\LegendOfMir2_Server020418\LoginGate\ServerSockMsg.cpp"
+"C:\LegendOfMir2_Server020418\Def\_OrzEx\syncobj.cpp"
+"C:\LegendOfMir2_Server020418\LoginGate\ThreadFuncForComm.cpp"
+"C:\LegendOfMir2_Server020418\LoginGate\ThreadFuncForMsg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPAA.tmp" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPAB.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /FR"../_Obj_Debug/LoginGate/" /Fp"../_Obj_Debug/LoginGate/LoginGate.pch" /Yc"stdafx.h" /Fo"../_Obj_Debug/LoginGate/" /Fd"../_Obj_Debug/LoginGate/" /FD /GZ /c 
+"C:\LegendOfMir2_Server020418\LoginGate\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPAB.tmp" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPAC.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:yes /pdb:"../_Bin/Debug/LoginGate.pdb" /debug /machine:I386 /out:"../_Bin/Debug/LoginGate.exe" /pdbtype:sept 
+\LegendOfMir2_Server020418\_Obj_Debug\LoginGate\ClientSockMsg.obj
+\LegendOfMir2_Server020418\_Obj_Debug\LoginGate\ConfigDlgFunc.obj
+\LegendOfMir2_Server020418\_Obj_Debug\LoginGate\LoginGate.obj
+\LegendOfMir2_Server020418\_Obj_Debug\LoginGate\MainWndProc.obj
+\LegendOfMir2_Server020418\_Obj_Debug\LoginGate\Misc.obj
+\LegendOfMir2_Server020418\_Obj_Debug\LoginGate\RegstryHandler.obj
+\LegendOfMir2_Server020418\_Obj_Debug\LoginGate\ServerSockHandler.obj
+\LegendOfMir2_Server020418\_Obj_Debug\LoginGate\ServerSockMsg.obj
+\LegendOfMir2_Server020418\_Obj_Debug\LoginGate\StdAfx.obj
+\LegendOfMir2_Server020418\_Obj_Debug\LoginGate\syncobj.obj
+\LegendOfMir2_Server020418\_Obj_Debug\LoginGate\ThreadFuncForComm.obj
+\LegendOfMir2_Server020418\_Obj_Debug\LoginGate\ThreadFuncForMsg.obj
+\LegendOfMir2_Server020418\_Obj_Debug\LoginGate\LoginGate.res
+]
+Creating command line "link.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPAC.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ClientSockMsg.cpp
+ConfigDlgFunc.cpp
+LoginGate.cpp
+MainWndProc.cpp
+Misc.cpp
+RegstryHandler.cpp
+ServerSockHandler.cpp
+ServerSockMsg.cpp
+syncobj.cpp
+ThreadFuncForComm.cpp
+ThreadFuncForMsg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+LoginGate.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: LoginSvr - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x412 /fo"../_Obj_Release/LoginSvr/LoginSvr.res" /d "NDEBUG" "C:\LegendOfMir2_Server020418\LoginSvr\LoginSvr.rc"" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPAE.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /Fp"../_Obj_Release/LoginSvr/LoginSvr.pch" /Yu"stdafx.h" /Fo"../_Obj_Release/LoginSvr/" /Fd"../_Obj_Release/LoginSvr/" /FD /c 
+"C:\LegendOfMir2_Server020418\LoginSvr\AddSvrListFunc.cpp"
+"C:\LegendOfMir2_Server020418\LoginSvr\ConfigDlgFunc.cpp"
+"C:\LegendOfMir2_Server020418\Def\dbmgr.cpp"
+"C:\LegendOfMir2_Server020418\LoginSvr\GateCommSockMsg.cpp"
+"C:\LegendOfMir2_Server020418\LoginSvr\GateInfo.cpp"
+"C:\LegendOfMir2_Server020418\LoginSvr\LoginSvr.cpp"
+"C:\LegendOfMir2_Server020418\LoginSvr\MainWndProc.cpp"
+"C:\LegendOfMir2_Server020418\Def\Misc.cpp"
+"C:\LegendOfMir2_Server020418\LoginSvr\ServerListProc.cpp"
+"C:\LegendOfMir2_Server020418\LoginSvr\ThreadFuncForMsg.cpp"
+"C:\LegendOfMir2_Server020418\Def\_OrzEx\database.cpp"
+"C:\LegendOfMir2_Server020418\Def\_OrzEx\syncobj.cpp"
+"C:\LegendOfMir2_Server020418\Def\EnDecode.cpp"
+"C:\LegendOfMir2_Server020418\Def\RegstryHandler.cpp"
+"C:\LegendOfMir2_Server020418\Def\ServerSockHandler.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPAE.tmp" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPAF.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /Fp"../_Obj_Release/LoginSvr/LoginSvr.pch" /Yc"stdafx.h" /Fo"../_Obj_Release/LoginSvr/" /Fd"../_Obj_Release/LoginSvr/" /FD /c 
+"C:\LegendOfMir2_Server020418\LoginSvr\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPAF.tmp" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPB0.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:no /pdb:"../_Bin/LoginSvr/LoginSvr.pdb" /machine:I386 /out:"../_Bin/LoginSvr/LoginSvr.exe" 
+\LegendOfMir2_Server020418\_Obj_Release\LoginSvr\AddSvrListFunc.obj
+\LegendOfMir2_Server020418\_Obj_Release\LoginSvr\ConfigDlgFunc.obj
+\LegendOfMir2_Server020418\_Obj_Release\LoginSvr\dbmgr.obj
+\LegendOfMir2_Server020418\_Obj_Release\LoginSvr\GateCommSockMsg.obj
+\LegendOfMir2_Server020418\_Obj_Release\LoginSvr\GateInfo.obj
+\LegendOfMir2_Server020418\_Obj_Release\LoginSvr\LoginSvr.obj
+\LegendOfMir2_Server020418\_Obj_Release\LoginSvr\MainWndProc.obj
+\LegendOfMir2_Server020418\_Obj_Release\LoginSvr\Misc.obj
+\LegendOfMir2_Server020418\_Obj_Release\LoginSvr\ServerListProc.obj
+\LegendOfMir2_Server020418\_Obj_Release\LoginSvr\StdAfx.obj
+\LegendOfMir2_Server020418\_Obj_Release\LoginSvr\ThreadFuncForMsg.obj
+\LegendOfMir2_Server020418\_Obj_Release\LoginSvr\database.obj
+\LegendOfMir2_Server020418\_Obj_Release\LoginSvr\syncobj.obj
+\LegendOfMir2_Server020418\_Obj_Release\LoginSvr\EnDecode.obj
+\LegendOfMir2_Server020418\_Obj_Release\LoginSvr\RegstryHandler.obj
+\LegendOfMir2_Server020418\_Obj_Release\LoginSvr\ServerSockHandler.obj
+\LegendOfMir2_Server020418\_Obj_Release\LoginSvr\LoginSvr.res
+]
+Creating command line "link.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPB0.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+AddSvrListFunc.cpp
+ConfigDlgFunc.cpp
+dbmgr.cpp
+GateCommSockMsg.cpp
+C:\LegendOfMir2_Server020418\LoginSvr\GateCommSockMsg.cpp(38) : error C2065: '_beginthreadex' : undeclared identifier
+GateInfo.cpp
+LoginSvr.cpp
+MainWndProc.cpp
+C:\LegendOfMir2_Server020418\LoginSvr\MainWndProc.cpp(194) : error C2065: '_beginthreadex' : undeclared identifier
+Misc.cpp
+ServerListProc.cpp
+ThreadFuncForMsg.cpp
+database.cpp
+syncobj.cpp
+EnDecode.cpp
+RegstryHandler.cpp
+ServerSockHandler.cpp
+Generating Code...
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+LoginSvr.exe - 2 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: LoginSvr - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x412 /fo"../_Obj_Debug/LoginSvr/LoginSvr.res" /d "_DEBUG" "C:\LegendOfMir2_Server020418\LoginSvr\LoginSvr.rc"" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPB1.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /FR"../_Obj_Debug/LoginSvr/" /Fp"../_Obj_Debug/LoginSvr/LoginSvr.pch" /Yu"stdafx.h" /Fo"../_Obj_Debug/LoginSvr/" /Fd"../_Obj_Debug/LoginSvr/" /FD /GZ /c 
+"C:\LegendOfMir2_Server020418\LoginSvr\AddSvrListFunc.cpp"
+"C:\LegendOfMir2_Server020418\LoginSvr\ConfigDlgFunc.cpp"
+"C:\LegendOfMir2_Server020418\Def\dbmgr.cpp"
+"C:\LegendOfMir2_Server020418\LoginSvr\GateCommSockMsg.cpp"
+"C:\LegendOfMir2_Server020418\LoginSvr\GateInfo.cpp"
+"C:\LegendOfMir2_Server020418\LoginSvr\LoginSvr.cpp"
+"C:\LegendOfMir2_Server020418\LoginSvr\MainWndProc.cpp"
+"C:\LegendOfMir2_Server020418\Def\Misc.cpp"
+"C:\LegendOfMir2_Server020418\LoginSvr\ServerListProc.cpp"
+"C:\LegendOfMir2_Server020418\LoginSvr\ThreadFuncForMsg.cpp"
+"C:\LegendOfMir2_Server020418\Def\_OrzEx\database.cpp"
+"C:\LegendOfMir2_Server020418\Def\_OrzEx\syncobj.cpp"
+"C:\LegendOfMir2_Server020418\Def\EnDecode.cpp"
+"C:\LegendOfMir2_Server020418\Def\RegstryHandler.cpp"
+"C:\LegendOfMir2_Server020418\Def\ServerSockHandler.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPB1.tmp" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPB2.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /FR"../_Obj_Debug/LoginSvr/" /Fp"../_Obj_Debug/LoginSvr/LoginSvr.pch" /Yc"stdafx.h" /Fo"../_Obj_Debug/LoginSvr/" /Fd"../_Obj_Debug/LoginSvr/" /FD /GZ /c 
+"C:\LegendOfMir2_Server020418\LoginSvr\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPB2.tmp" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPB3.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:yes /pdb:"../_Bin/Debug/LoginSvr.pdb" /debug /machine:I386 /out:"../_Bin/Debug/LoginSvr.exe" /pdbtype:sept 
+\LegendOfMir2_Server020418\_Obj_Debug\LoginSvr\AddSvrListFunc.obj
+\LegendOfMir2_Server020418\_Obj_Debug\LoginSvr\ConfigDlgFunc.obj
+\LegendOfMir2_Server020418\_Obj_Debug\LoginSvr\dbmgr.obj
+\LegendOfMir2_Server020418\_Obj_Debug\LoginSvr\GateCommSockMsg.obj
+\LegendOfMir2_Server020418\_Obj_Debug\LoginSvr\GateInfo.obj
+\LegendOfMir2_Server020418\_Obj_Debug\LoginSvr\LoginSvr.obj
+\LegendOfMir2_Server020418\_Obj_Debug\LoginSvr\MainWndProc.obj
+\LegendOfMir2_Server020418\_Obj_Debug\LoginSvr\Misc.obj
+\LegendOfMir2_Server020418\_Obj_Debug\LoginSvr\ServerListProc.obj
+\LegendOfMir2_Server020418\_Obj_Debug\LoginSvr\StdAfx.obj
+\LegendOfMir2_Server020418\_Obj_Debug\LoginSvr\ThreadFuncForMsg.obj
+\LegendOfMir2_Server020418\_Obj_Debug\LoginSvr\database.obj
+\LegendOfMir2_Server020418\_Obj_Debug\LoginSvr\syncobj.obj
+\LegendOfMir2_Server020418\_Obj_Debug\LoginSvr\EnDecode.obj
+\LegendOfMir2_Server020418\_Obj_Debug\LoginSvr\RegstryHandler.obj
+\LegendOfMir2_Server020418\_Obj_Debug\LoginSvr\ServerSockHandler.obj
+\LegendOfMir2_Server020418\_Obj_Debug\LoginSvr\LoginSvr.res
+]
+Creating command line "link.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPB3.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+AddSvrListFunc.cpp
+ConfigDlgFunc.cpp
+dbmgr.cpp
+GateCommSockMsg.cpp
+GateInfo.cpp
+LoginSvr.cpp
+MainWndProc.cpp
+Misc.cpp
+ServerListProc.cpp
+ThreadFuncForMsg.cpp
+database.cpp
+syncobj.cpp
+EnDecode.cpp
+RegstryHandler.cpp
+ServerSockHandler.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+LoginSvr.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: ManConsole - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x412 /fo"Release/ManConsole.res" /d "NDEBUG" /d "_AFXDLL" "C:\LegendOfMir2_Server020418\ManConsole\ManConsole.rc"" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPB5.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/ManConsole.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\LegendOfMir2_Server020418\ManConsole\ConsoleSocket.cpp"
+"C:\LegendOfMir2_Server020418\ManConsole\ManConsole.cpp"
+"C:\LegendOfMir2_Server020418\ManConsole\ManConsoleDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPB5.tmp" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPB6.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/ManConsole.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\LegendOfMir2_Server020418\ManConsole\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPB6.tmp" 
+Creating command line "link.exe /nologo /subsystem:windows /incremental:no /pdb:"Release/ManConsole.pdb" /machine:I386 /out:"Release/ManConsole.exe"  .\Release\ConsoleSocket.obj .\Release\ManConsole.obj .\Release\ManConsoleDlg.obj .\Release\StdAfx.obj .\Release\ManConsole.res "
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ConsoleSocket.cpp
+ManConsole.cpp
+ManConsoleDlg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+ManConsole.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: ManConsole - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x412 /fo"Debug/ManConsole.res" /d "_DEBUG" /d "_AFXDLL" "C:\LegendOfMir2_Server020418\ManConsole\ManConsole.rc"" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPB8.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/ManConsole.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\LegendOfMir2_Server020418\ManConsole\ConsoleSocket.cpp"
+"C:\LegendOfMir2_Server020418\ManConsole\ManConsole.cpp"
+"C:\LegendOfMir2_Server020418\ManConsole\ManConsoleDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPB8.tmp" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPB9.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/ManConsole.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\LegendOfMir2_Server020418\ManConsole\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPB9.tmp" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPBA.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/ManConsole.pdb" /debug /machine:I386 /out:"Debug/ManConsole.exe" /pdbtype:sept 
+.\Debug\ConsoleSocket.obj
+.\Debug\ManConsole.obj
+.\Debug\ManConsoleDlg.obj
+.\Debug\StdAfx.obj
+.\Debug\ManConsole.res
+]
+Creating command line "link.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPBA.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ConsoleSocket.cpp
+ManConsole.cpp
+ManConsoleDlg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+ManConsole.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SelGate - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x412 /fo"Release/SelGate.res" /d "NDEBUG" "C:\LegendOfMir2_Server020418\SelGate\SelGate.rc"" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPBC.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /Fp"Release/SelGate.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\LegendOfMir2_Server020418\SelGate\ClientSockMsg.cpp"
+"C:\LegendOfMir2_Server020418\SelGate\ConfigDlgFunc.cpp"
+"C:\LegendOfMir2_Server020418\SelGate\MainWndProc.cpp"
+"C:\LegendOfMir2_Server020418\Def\Misc.cpp"
+"C:\LegendOfMir2_Server020418\Def\RegstryHandler.cpp"
+"C:\LegendOfMir2_Server020418\SelGate\SelGate.cpp"
+"C:\LegendOfMir2_Server020418\Def\ServerSockHandler.cpp"
+"C:\LegendOfMir2_Server020418\SelGate\ServerSockMsg.cpp"
+"C:\LegendOfMir2_Server020418\Def\_OrzEx\syncobj.cpp"
+"C:\LegendOfMir2_Server020418\SelGate\ThreadFuncForComm.cpp"
+"C:\LegendOfMir2_Server020418\SelGate\ThreadFuncForMsg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPBC.tmp" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPBD.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /Fp"Release/SelGate.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\LegendOfMir2_Server020418\SelGate\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPBD.tmp" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPBE.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/SelGate.pdb" /machine:I386 /out:"Release/SelGate.exe" 
+.\Release\ClientSockMsg.obj
+.\Release\ConfigDlgFunc.obj
+.\Release\MainWndProc.obj
+.\Release\Misc.obj
+.\Release\RegstryHandler.obj
+.\Release\SelGate.obj
+.\Release\ServerSockHandler.obj
+.\Release\ServerSockMsg.obj
+.\Release\StdAfx.obj
+.\Release\syncobj.obj
+.\Release\ThreadFuncForComm.obj
+.\Release\ThreadFuncForMsg.obj
+.\Release\SelGate.res
+]
+Creating command line "link.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPBE.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ClientSockMsg.cpp
+ConfigDlgFunc.cpp
+MainWndProc.cpp
+Misc.cpp
+RegstryHandler.cpp
+SelGate.cpp
+ServerSockHandler.cpp
+ServerSockMsg.cpp
+syncobj.cpp
+ThreadFuncForComm.cpp
+ThreadFuncForMsg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+SelGate.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SelGate - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x412 /fo"../_Obj_Debug/SelGate/SelGate.res" /d "_DEBUG" "C:\LegendOfMir2_Server020418\SelGate\SelGate.rc"" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPC0.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /Fp"../_Obj_Debug/SelGate/SelGate.pch" /Yu"stdafx.h" /Fo"../_Obj_Debug/SelGate/" /Fd"../_Obj_Debug/SelGate/" /FD /GZ /c 
+"C:\LegendOfMir2_Server020418\SelGate\ClientSockMsg.cpp"
+"C:\LegendOfMir2_Server020418\SelGate\ConfigDlgFunc.cpp"
+"C:\LegendOfMir2_Server020418\SelGate\MainWndProc.cpp"
+"C:\LegendOfMir2_Server020418\Def\Misc.cpp"
+"C:\LegendOfMir2_Server020418\Def\RegstryHandler.cpp"
+"C:\LegendOfMir2_Server020418\SelGate\SelGate.cpp"
+"C:\LegendOfMir2_Server020418\Def\ServerSockHandler.cpp"
+"C:\LegendOfMir2_Server020418\SelGate\ServerSockMsg.cpp"
+"C:\LegendOfMir2_Server020418\Def\_OrzEx\syncobj.cpp"
+"C:\LegendOfMir2_Server020418\SelGate\ThreadFuncForComm.cpp"
+"C:\LegendOfMir2_Server020418\SelGate\ThreadFuncForMsg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPC0.tmp" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPC1.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /Fp"../_Obj_Debug/SelGate/SelGate.pch" /Yc"stdafx.h" /Fo"../_Obj_Debug/SelGate/" /Fd"../_Obj_Debug/SelGate/" /FD /GZ /c 
+"C:\LegendOfMir2_Server020418\SelGate\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPC1.tmp" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPC2.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:yes /pdb:"../_Bin/Debug/SelGate.pdb" /debug /machine:I386 /out:"../_Bin/Debug/SelGate.exe" /pdbtype:sept 
+\LegendOfMir2_Server020418\_Obj_Debug\SelGate\ClientSockMsg.obj
+\LegendOfMir2_Server020418\_Obj_Debug\SelGate\ConfigDlgFunc.obj
+\LegendOfMir2_Server020418\_Obj_Debug\SelGate\MainWndProc.obj
+\LegendOfMir2_Server020418\_Obj_Debug\SelGate\Misc.obj
+\LegendOfMir2_Server020418\_Obj_Debug\SelGate\RegstryHandler.obj
+\LegendOfMir2_Server020418\_Obj_Debug\SelGate\SelGate.obj
+\LegendOfMir2_Server020418\_Obj_Debug\SelGate\ServerSockHandler.obj
+\LegendOfMir2_Server020418\_Obj_Debug\SelGate\ServerSockMsg.obj
+\LegendOfMir2_Server020418\_Obj_Debug\SelGate\StdAfx.obj
+\LegendOfMir2_Server020418\_Obj_Debug\SelGate\syncobj.obj
+\LegendOfMir2_Server020418\_Obj_Debug\SelGate\ThreadFuncForComm.obj
+\LegendOfMir2_Server020418\_Obj_Debug\SelGate\ThreadFuncForMsg.obj
+\LegendOfMir2_Server020418\_Obj_Debug\SelGate\SelGate.res
+]
+Creating command line "link.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPC2.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ClientSockMsg.cpp
+ConfigDlgFunc.cpp
+MainWndProc.cpp
+Misc.cpp
+RegstryHandler.cpp
+SelGate.cpp
+ServerSockHandler.cpp
+ServerSockMsg.cpp
+syncobj.cpp
+ThreadFuncForComm.cpp
+ThreadFuncForMsg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+SelGate.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: VirtualClient - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x412 /fo"Release/VirtualClient.res" /d "NDEBUG" "C:\LegendOfMir2_Server020418\VirtualClient\VirtualClient.rc"" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPC4.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /Fp"Release/VirtualClient.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\LegendOfMir2_Server020418\VirtualClient\DlgFunc.cpp"
+"C:\LegendOfMir2_Server020418\Def\EnDecode.cpp"
+"C:\LegendOfMir2_Server020418\VirtualClient\InitClient.cpp"
+"C:\LegendOfMir2_Server020418\Def\Misc.cpp"
+"C:\LegendOfMir2_Server020418\VirtualClient\VirtualClient.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPC4.tmp" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPC5.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /Fp"Release/VirtualClient.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\LegendOfMir2_Server020418\VirtualClient\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPC5.tmp" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPC6.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/VirtualClient.pdb" /machine:I386 /out:"Release/VirtualClient.exe" 
+.\Release\DlgFunc.obj
+.\Release\EnDecode.obj
+.\Release\InitClient.obj
+.\Release\Misc.obj
+.\Release\StdAfx.obj
+.\Release\VirtualClient.obj
+.\Release\VirtualClient.res
+]
+Creating command line "link.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPC6.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+DlgFunc.cpp
+EnDecode.cpp
+InitClient.cpp
+Misc.cpp
+VirtualClient.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+VirtualClient.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: VirtualClient - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x412 /fo"Debug/VirtualClient.res" /d "_DEBUG" "C:\LegendOfMir2_Server020418\VirtualClient\VirtualClient.rc"" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPC8.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fp"Debug/VirtualClient.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\LegendOfMir2_Server020418\VirtualClient\DlgFunc.cpp"
+"C:\LegendOfMir2_Server020418\Def\EnDecode.cpp"
+"C:\LegendOfMir2_Server020418\VirtualClient\InitClient.cpp"
+"C:\LegendOfMir2_Server020418\Def\Misc.cpp"
+"C:\LegendOfMir2_Server020418\VirtualClient\VirtualClient.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPC8.tmp" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPC9.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fp"Debug/VirtualClient.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\LegendOfMir2_Server020418\VirtualClient\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPC9.tmp" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPCA.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/VirtualClient.pdb" /debug /machine:I386 /out:"..\Debug/VirtualClient.exe" /pdbtype:sept 
+.\Debug\DlgFunc.obj
+.\Debug\EnDecode.obj
+.\Debug\InitClient.obj
+.\Debug\Misc.obj
+.\Debug\StdAfx.obj
+.\Debug\VirtualClient.obj
+.\Debug\VirtualClient.res
+]
+Creating command line "link.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPCA.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+DlgFunc.cpp
+EnDecode.cpp
+InitClient.cpp
+Misc.cpp
+VirtualClient.cpp
+Generating Code...
+Linking...
+Creating command line "bscmake.exe /nologo /o"Debug/VirtualClient.bsc"  .\Debug\StdAfx.sbr .\Debug\DlgFunc.sbr .\Debug\EnDecode.sbr .\Debug\InitClient.sbr .\Debug\Misc.sbr .\Debug\VirtualClient.sbr"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+VirtualClient.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,160 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_COMMAND_MONGEN      "mob"
+    IDS_COMMAND_INSPECTOR   "observer"
+    IDS_COMMAND_ADMIN       "Admin"
+    IDS_COMMAND_INVINCIBILITY "superman"
+    IDS_COMMAND_ATTACK      "attack"
+    IDS_COMMAND_MOVE        "move"
+    IDS_COMMAND_CHANGELEVEL "mylevel"
+    IDS_COMMAND_MOVEFREESTYLE "mapmove"
+    IDS_COMMAND_MAP         "map"
+    IDS_COMMAND_LEVEL       "level"
+    IDS_COMMAND_MONLEVEL    "moblevel"
+    IDS_COMMAND_RECALL      "recall"
+    IDS_COMMAND_NUMOFMON    "mobcount"
+    IDS_COMMAND_NUMOFHUMAN  "players"
+    IDS_COMMAND_SABUKMONEY  "sabukmoney"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_COMMAND_KICK        "Kick"
+    IDS_COMMAND_KICK2       "Masskick"
+    IDS_COMMAND_TING        "Ting"
+    IDS_COMMAND_KINGTING    "MassTing"
+    IDS_COMMAND_LUCKYVALUE  "luckpoint"
+    IDS_COMMANT_SHUTUP      "silence"
+    IDS_COMMAND_TALK        "speak"
+    IDS_COMMAND_SHUTUPMAN   "shutup"
+    IDS_COMMAND_RELOADADMIN "reloadadmin"
+    IDS_COMMAND_RELOADABUSIVE "reloadabusive"
+    IDS_COMMAND_MOOTAEBO    "무태보"
+    IDS_COMMAND_BACKWALK    "Backstep"
+    IDS_COMMAND_GAIN        "생산"
+    IDS_COMMAND_DELGOLD     "deletegold"
+    IDS_COMMAND_ADDGOLD     "Addgold"
+    IDS_COMMAND_GOOD        "물건"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_COMMAND_OTHERDELGOLD "Delothergold"
+    IDS_COMMAND_OTHERADDGOLD "addothergold"
+    IDS_COMMAND_OTHERLEVELUP "adjustlevel"
+    IDS_COMMAND_OTHEREXPUP  "experience"
+    IDS_COMMAND_WEAPONDUR   "weapondura"
+    IDS_COMMAND_PARDON      "nopk"
+    IDS_COMMAND_PKPOINT     "pkpoint"
+    IDS_COMMAND_PKPOINTUP   "addpk"
+    IDS_COMMAND_CHANGELUCKY "luck"
+    IDS_COMMAND_SKILLUP     "training"
+    IDS_COMMAND_OTHERSKILLUP "optraining"
+    IDS_COMMAND_DELSKILL    "removeskill"
+    IDS_COMMAND_OTHERDELSKILL "delskill"
+    IDS_COMMAND_CHGJOB      "class"
+    IDS_COMMAND_CHGGENDER   "gender"
+    IDS_COMMAND_COLOR       "namecolour"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_COMMAND_MONRECALL   "recallmob"
+    IDS_COMMAND_MISSION     "mission"
+    IDS_COMMAND_GENPOS      "mobplace"
+    IDS_COMMAND_TRANSPARENCY "transparency"
+    IDS_COMMAND_CIVILWAR    "sabukwar"
+    IDS_COMMAND_DYEINGHAIR  "haircolour"
+    IDS_COMMAND_DYEINGWEAR  "armour"
+    IDS_COMMAND_SUSINOTICE  "수시공지"
+    IDS_COMMAND_GAMCHUNG    "감청"
+    IDS_COMMAND_CHOOLDOO    "출두"
+    IDS_COMMAND_RESERVED1   "reloadmonster"
+    IDS_COMMAND_RESERVED2   "reloaditem"
+    IDS_COMMAND_RESERVED3   "아이템이름"
+    IDS_COMMAND_RESERVED4   "갈무리"
+    IDS_COMMAND_RESERVED5   "스크립터"
+    IDS_COMMAND_RESERVED6   "미지정6"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_COMMAND_RESERVED7   "미지정7"
+    IDS_COMMAND_RESERVED8   "미지정8"
+    IDS_COMMANT_RESERVED9   "미지정9"
+    IDS_COMMAND_RESERVED10  "미지정10"
+    IDS_COMMAND_RESERVED11  "미지정11"
+    IDS_COMMAND_RESERVED12  "미지정12"
+    IDS_COMMAND_RESERVED13  "미지정13"
+    IDS_COMMAND_HAIRSTYLE   "hairstyle"
+END
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

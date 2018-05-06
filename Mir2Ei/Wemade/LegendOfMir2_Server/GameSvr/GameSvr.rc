@@ -1,0 +1,306 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_TOOLBAR             BITMAP  DISCARDABLE     ".\\Res\\toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MIR2                ICON    DISCARDABLE     ".\\Res\\MIR2.ICO"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "&Service"
+    BEGIN
+        MENUITEM "&Start Service",              IDM_STARTSERVICE
+        MENUITEM "S&top Service",               IDM_STOPSERVICE, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Configuration",              IDM_CONFIG
+        MENUITEM "&Font Color",                 IDM_SETFONTCOLOR
+        MENUITEM "&Background Color",           IDM_SETBKGCOLOR
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_NOTWINNT            "You are not running a NT-Kernel based operating system. Please install Windows NT4/2000/XP/2003/Longhorn."
+    IDS_LVS_LABEL1          "Date"
+    IDS_LVS_LABEL2          "Time"
+    IDS_LVS_LABEL3          "Text"
+    IDS_STARTSERVICE        "Service started."
+    IDS_STOPSERVICE         "Service stopped."
+    IDS_FETCH_MAGICDATA     "INFO : %d Spells loaded."
+    IDS_DISCONNECT_LOGINSERVER "ERROR : Login Server disconnected"
+    IDS_PROGRAM_QUIT        "Are you sure you wish to quit?"
+    IDS_PROGRAM_TITLE       "The Legend Of Mir 2 - GameServer"
+    IDS_LOAD_ADMINCOMMAND   "%d Administrator commands loaded."
+    IDS_CONFLVS_LABEL1      "서버명"
+    IDS_CONFLVS_LABEL2      "타이틀"
+    IDS_CONFLVS_LABEL3      "로그인 게이트 내부 IP 주소"
+    IDS_CONFLVS_LABEL4      "로그인 게이트 외부 IP 주소"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CONFLVS_LABEL5      "게임 게이트 외부 IP 주소"
+    IDS_TAB_LABEL1          "서버 설정"
+    IDS_ACCEPT_GATESERVER   "INFO : (%s) Connected to Gate Server"
+    IDS_OPEN_USER           "클라이언트 (%s) 가 접속을 시도 했습니다. "
+    IDS_CLOSE_USER          "클라이언트 (%s) 가 접속을 종료 했습니다."
+    IDS_OPEN_GATE           "Gate %d opened."
+    IDS_CLOSE_GATE          "Gate %d closed."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CONNECT_DBSERVER    "INFO : Connected to Database Server."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_LOADMAPFILE_GOOD    "(%s) Mapfiles loaded."
+    IDS_LOADMAPFILE_FAIL    "ERROR : (%s) Loading mapfiles failed."
+    IDS_DISCONNECT_DBSERVER "ERROR : Disconnected from Database Server"
+    IDS_APPLY_RECONNECT     "INFO : Attempting to re-connect."
+    IDS_CANT_CONNECT        "ERROR : Unable to connect."
+    IDS_FETCH_MONSTER       "%d Monsters loaded."
+    IDS_FETCH_MONGEN        "%d Monster Generation loaded."
+    IDS_FETCH_STDITEMWEAPON "%d Weapons loaded."
+    IDS_FETCH_STDITEMARMOR  "%d Armours loaded."
+    IDS_FETCH_MERCHANT      "%d Merchants Loaded."
+    IDS_FETCH_MOVEMAPEVENT  "%d Map Information loaded."
+    IDS_ALLOW_LONGHIT       "Thrusting on."
+    IDS_NOTALLOW_LONGHIT    "Thrusting off."
+    IDS_ALLOW_WIDEHIT       "Halfmoon on."
+    IDS_NOTALLOW_WIDEHIT    "Halfmoon off."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ALLOW_FIREHIT       "Flamingsword on."
+    IDS_NOTALLOW_FIREHIT    "Flamingsword off."
+    IDS_TIMEOUT_FIREHIT     "The flames have disappeared."
+    IDS_ATTACKMODE_ALL      "[Attack all mode.]"
+    IDS_ATTACKMODE_PEACE    "[Peaceful mode.]"
+    IDS_ATTACKMODE_GROUP    "[Group attack mode.]"
+    IDS_ATTACKMODE_GUILD    "[Guild attack mode.]"
+    IDS_ATTACKMODE_PKATTACK "[Red and white attack mode.]"
+    IDS_ATTACKMODE_CHGMODE  "To change attack modes use : CTRL-H"
+    IDS_FETCH_STDITEMETC    "%d Miscellaneous items loaded."
+    IDS_FETCH_STDITEMACCESSORY "%d Accessories loaded."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_JOBNAME_W           "Warrior"
+    IDS_JOBNAME_S           "Wizard"
+    IDS_JOBNAME_T           "Taoist"
+    IDS_INSPECTOR_ON        "Observer mode on."
+    IDS_INSPECTOR_OFF       "Observe mode off."
+    IDS_NOTENOUGHLEVEL_CRY  "You must be at least level 8 to shout."
+    IDS_CANTFIND_HUMAN      "cannot be found."
+    IDS_SKIL_LEVELUP        "%s is now level %d."
+    IDS_USERCMD_NOWHISPER1  "nowhisper"
+    IDS_USERCMD_NOWHISPER2  "rejectwhisper"
+    IDS_USERCMD_YESWHISPER1 "allowwhisper"
+    IDS_USERCMD_YESWHISPER2 "enablewhisper"
+    IDS_USERCMD_NOWHISPER_SOMEBODY "intercept"
+    IDS_USERCMD_DONTCRY1    "noshout"
+    IDS_USERCMD_DONTCRY2    "rejectshout"
+    IDS_USERCMD_DONTEXNG    "교환거부"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_USERCMD_ACPTGUILD   "allowguild"
+    IDS_USERCMD_ALOWPARTY   "allowparty"
+    IDS_USERCMD_DOPARTY     "join party"
+    IDS_USERCMD_BROKEPARTY  "left party"
+    IDS_USERCMD_OUTGUILD    "leaveguild"
+    IDS_USERCMD_NOGUILDCRY1 "noguildchat"
+    IDS_USERCMD_NOGUILDCRY2 "rejectguildchat"
+    IDS_USERCMD_ATTACKMODE  "attackmode"
+    IDS_USERCMD_REST        "rest"
+    IDS_USERCMD_SABUKDOOR   "sabukdoor"
+    IDS_LOAD_USERCOMMAND    "%d Usercommands loaded."
+    IDS_DEFENCEUP           "AC has increased by 5 for %d seconds."
+    IDS_MAGDEFENCEUP        "AMC has increased by 5 for  %d seconds."
+    IDS_MALE_WEAR           "Only men can wear this."
+    IDS_FEMALE_WEAR         "Only women can wear this."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_NOTENOUGH_VALUE     "Not enough gold."
+    IDS_NOTENOUGH_WEIGHT    "Too heavy."
+    IDS_GOLD                "gold"
+    IDS_NEVERDIE_ON         "Invincibility on."
+    IDS_NEVERDIE_OFF        "Invincibility off."
+    IDS_CAPTURE_ON          "Capturing on."
+    IDS_CAPTURE_OFF         "Capturing off."
+END
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.K.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CONFIGDLG DIALOG DISCARDABLE  0, 0, 343, 285
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Game Server Configuration"
+FONT 9, "??"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,228,264,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,285,264,50,14
+    LTEXT           "Game Server Index : ",IDC_STATIC,23,24,70,8
+    CONTROL         "IPAddress1",IDC_DBSVR_IP,"SysIPAddress32",WS_TABSTOP,65,
+                    130,90,11
+    EDITTEXT        IDC_DBSRV_PORT,65,144,28,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Address :",IDC_STATIC,29,132,35,8
+    GROUPBOX        "Database Server Information",IDC_STATIC,15,116,158,48
+    LTEXT           "Port :",IDC_STATIC,43,145,21,9
+    GROUPBOX        "Server Information",IDC_STATIC,15,58,158,54
+    EDITTEXT        IDC_SRVINDEX,94,21,17,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Start Level :",IDC_STATIC,27,76,39,8
+    LTEXT           "Start Gold :",IDC_STATIC,99,76,37,8
+    EDITTEXT        IDC_STARTLEVEL,69,73,19,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_STARTGOLD,142,74,19,14,ES_AUTOHSCROLL
+    CONTROL         "Test Server",IDC_CHECK_TESTSRV,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,26,93,53,10
+    LTEXT           "Game Server Name :",IDC_STATIC,120,24,70,8
+    LTEXT           "Game Server Number :",IDC_STATIC,15,41,76,8
+    EDITTEXT        IDC_SRVNUMBER,94,38,17,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_SRVNAME,193,21,40,14,ES_CENTER | ES_AUTOHSCROLL
+    GROUPBOX        "File Location Information",IDC_STATIC,178,58,149,40
+    LTEXT           "Map :",IDC_STATIC,186,74,20,8
+    EDITTEXT        IDC_MAPFILE_LOC,209,72,108,14,ES_AUTOHSCROLL
+    CONTROL         "IPAddress1",IDC_DBMS_IP,"SysIPAddress32",WS_TABSTOP,65,
+                    185,90,11
+    EDITTEXT        IDC_DBMS_PORT,65,199,28,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Address :",IDC_STATIC,29,187,35,8
+    GROUPBOX        "SQL Server Information",IDC_STATIC,15,171,158,83
+    LTEXT           "Port :",IDC_STATIC,43,200,19,9
+    LTEXT           "ID : ",IDC_STATIC,30,237,14,8
+    EDITTEXT        IDC_DBMS_ID,46,234,28,14,ES_AUTOHSCROLL
+    LTEXT           "Password :",IDC_STATIC,82,237,38,8
+    EDITTEXT        IDC_DBMS_PASSWORD,123,234,40,14,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Database :",IDC_STATIC,25,216,36,8
+    EDITTEXT        IDC_DBMS_DEVICE,65,214,82,14,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_CONFIGDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 335
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 278
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.K.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

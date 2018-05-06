@@ -1,0 +1,81 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: GameGate - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x412 /fo"../_Obj_Debug/GameGate/GameGate.res" /d "_DEBUG" "C:\LegendOfMir2_Server020418\GameGate\GameGate.rc"" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPAB.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"../_Obj_Debug/GameGate/" /Fp"../_Obj_Debug/GameGate/GameGate.pch" /Yu"stdafx.h" /Fo"../_Obj_Debug/GameGate/" /Fd"../_Obj_Debug/GameGate/" /FD /GZ /c 
+"C:\LegendOfMir2_Server020418\GameGate\Abusive.cpp"
+"C:\LegendOfMir2_Server020418\GameGate\ClientSockMsg.cpp"
+"C:\LegendOfMir2_Server020418\GameGate\ConfigDlgFunc.cpp"
+"C:\LegendOfMir2_Server020418\Def\EnDecode.cpp"
+"C:\LegendOfMir2_Server020418\GameGate\GameGate.cpp"
+"C:\LegendOfMir2_Server020418\GameGate\MainWndProc.cpp"
+"C:\LegendOfMir2_Server020418\Def\Misc.cpp"
+"C:\LegendOfMir2_Server020418\Def\RegstryHandler.cpp"
+"C:\LegendOfMir2_Server020418\Def\ServerSockHandler.cpp"
+"C:\LegendOfMir2_Server020418\GameGate\ServerSockMsg.cpp"
+"C:\LegendOfMir2_Server020418\Def\_OrzEx\syncobj.cpp"
+"C:\LegendOfMir2_Server020418\GameGate\ThreadFuncForComm.cpp"
+"C:\LegendOfMir2_Server020418\GameGate\ThreadFuncForMsg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPAB.tmp" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPAC.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"../_Obj_Debug/GameGate/" /Fp"../_Obj_Debug/GameGate/GameGate.pch" /Yc"stdafx.h" /Fo"../_Obj_Debug/GameGate/" /Fd"../_Obj_Debug/GameGate/" /FD /GZ /c 
+"C:\LegendOfMir2_Server020418\GameGate\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPAC.tmp" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPAD.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:yes /pdb:"../_Bin/Debug/GameGate.pdb" /debug /machine:I386 /out:"../_Bin/Debug/GameGate.exe" /pdbtype:sept 
+\LegendOfMir2_Server020418\_Obj_Debug\GameGate\Abusive.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameGate\ClientSockMsg.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameGate\ConfigDlgFunc.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameGate\EnDecode.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameGate\GameGate.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameGate\MainWndProc.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameGate\Misc.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameGate\RegstryHandler.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameGate\ServerSockHandler.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameGate\ServerSockMsg.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameGate\StdAfx.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameGate\syncobj.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameGate\ThreadFuncForComm.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameGate\ThreadFuncForMsg.obj
+\LegendOfMir2_Server020418\_Obj_Debug\GameGate\GameGate.res
+]
+Creating command line "link.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSPAD.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+Abusive.cpp
+ClientSockMsg.cpp
+ConfigDlgFunc.cpp
+EnDecode.cpp
+GameGate.cpp
+MainWndProc.cpp
+Misc.cpp
+RegstryHandler.cpp
+ServerSockHandler.cpp
+ServerSockMsg.cpp
+syncobj.cpp
+ThreadFuncForComm.cpp
+ThreadFuncForMsg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+GameGate.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
