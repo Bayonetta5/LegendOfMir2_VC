@@ -46,17 +46,20 @@ void SwitchMenuItem(BOOL fFlag)
 	}
 }
 
+/************************************************************************/
+/* 初始化数据库信息                                                                     */
+/************************************************************************/
 CMapInfo* InitDataInDatabase()
 {
 	int nServerIndex;
 
-	InitMagicInfo();
-	InitMonsterGenInfo();
-	InitMonRaceInfo();
-	InitStdItemSpecial();
-	InitStdItemEtcInfo();
-	InitMerchantInfo();
-	InitMoveMapEventInfo();
+	InitMagicInfo();//魔法技能
+	InitMonsterGenInfo();//刷怪
+	InitMonRaceInfo();//怪物掉落物品
+	InitStdItemSpecial();//特殊物品
+	InitStdItemEtcInfo();//默认物品信息
+	InitMerchantInfo();//商人信息
+	InitMoveMapEventInfo();//地图传送点
 
 	if (!jRegGetKey(_GAME_SERVER_REGISTRY, _TEXT("ServerNumber"), (LPBYTE)&nServerIndex))
 		return FALSE;
@@ -111,8 +114,10 @@ UINT WINAPI InitializingServer(LPVOID lpParameter)
 	jRegGetKey(_GAME_SERVER_REGISTRY, _TEXT("DBServerPort"), (LPBYTE)&nPort);
 	_itow(nPort, szPort, 10);
 
+	//连接数据库服务器
 	ConnectToServer(g_csock, &g_caddr, _IDM_CLIENTSOCK_MSG, NULL, dwIP, nPort, FD_CONNECT|FD_READ|FD_CLOSE);
-//	ConnectToServer(g_clsock, &g_claddr, _IDM_LOGSVRSOCK_MSG, NULL, dwIP, 5500, FD_CONNECT|FD_READ|FD_CLOSE);
+	//连接日志服务器
+	ConnectToServer(g_clsock, &g_claddr, _IDM_LOGSVRSOCK_MSG, NULL, dwIP, 5500, FD_CONNECT|FD_READ|FD_CLOSE);
 
 	return 0L;
 }
@@ -211,11 +216,11 @@ LPARAM APIENTRY MainWndProc(HWND hWnd, UINT nMsg, WPARAM wParam, LPARAM lParam)
 {
 	switch (nMsg)
 	{
-		case _IDM_SERVERSOCK_MSG:
-			return OnServerSockMsg(wParam, lParam);
-		case _IDM_CLIENTSOCK_MSG:
+		//case _IDM_SERVERSOCK_MSG:
+		//	return OnServerSockMsg(wParam, lParam);
+		case _IDM_CLIENTSOCK_MSG://数据库服务器消息
 			return OnClientSockMsg(wParam, lParam);
-		case _IDM_LOGSVRSOCK_MSG:
+		case _IDM_LOGSVRSOCK_MSG://日志服务器消息
 			return OnLogSvrSockMsg(wParam, lParam);
 		case WM_COMMAND:
 			OnCommand(wParam, lParam);

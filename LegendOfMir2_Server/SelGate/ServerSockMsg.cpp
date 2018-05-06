@@ -130,7 +130,7 @@ DWORD WINAPI ServerWorkerThread(LPVOID CompletionPortID)
 	while (TRUE)
 	{
 		if (GetQueuedCompletionStatus((HANDLE)CompletionPortID, &dwBytesTransferred, (LPDWORD)&pSessionInfo, 
-										(LPOVERLAPPED *)&lpPerIoData, INFINITE) == 0)
+										(LPOVERLAPPED *)&lpPerIoData, INFINITE) == FALSE)
 		{
 			if (g_fTerminated)
 				return 0;

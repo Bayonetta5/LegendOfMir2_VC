@@ -7,6 +7,7 @@
 
 static CDBManager s_dbManager;
 
+//数据库管理对象
 
 CDBManager::CDBManager()
 {

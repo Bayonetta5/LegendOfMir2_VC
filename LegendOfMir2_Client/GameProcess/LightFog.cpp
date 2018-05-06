@@ -29,9 +29,10 @@ VOID CLightFog::Init(DWORD dwLightColor)
 
 	// 타일폴리곤의 인덱스 생성.
     WORD* pwIndex = m_pwLightIndices;
+	int nCntY, nCntX;
 	for ( nCntY = 0; nCntY < NUM_CNTY_LIGHTTILE; nCntY++ )
 	{
-		for ( INT nCntX = 0; nCntX < NUM_CNTX_LIGHTTILE; nCntX++ )
+		for ( nCntX = 0; nCntX < NUM_CNTX_LIGHTTILE; nCntX++ )
 		{
 			*pwIndex++ = (nCntX+1)+((NUM_CNTX_LIGHTTILE+1)*nCntY);  
 			*pwIndex++ = nCntX+((NUM_CNTX_LIGHTTILE+1)*(nCntY+1));  

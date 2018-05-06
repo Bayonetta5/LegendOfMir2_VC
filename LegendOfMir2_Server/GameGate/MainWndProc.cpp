@@ -65,14 +65,14 @@ void OnCommand(WPARAM wParam, LPARAM lParam)
 
 			if (!jRegGetKey(_GAMEGATE_SERVER_REGISTRY, _TEXT("LocalPort"), (LPBYTE)&nPort))
 				nPort = 7200;
-
+			//初始化游戏网关
 			InitServerSocket(g_ssock, &g_saddr, _IDM_SERVERSOCK_MSG, nPort, 2);
 
 			jRegGetKey(_GAMEGATE_SERVER_REGISTRY, _TEXT("RemoteIP"), (LPBYTE)&dwIP);
 
 			if (!jRegGetKey(_GAMEGATE_SERVER_REGISTRY, _TEXT("RemotePort"), (LPBYTE)&nPort))
-				nPort = 5000;
-
+				nPort = 5500;
+			//连接登陆服务器
 			ConnectToServer(g_csock, &g_caddr, _IDM_CLIENTSOCK_MSG, NULL, dwIP, nPort, FD_CONNECT|FD_READ|FD_CLOSE);
 
 			SwitchMenuItem(TRUE);

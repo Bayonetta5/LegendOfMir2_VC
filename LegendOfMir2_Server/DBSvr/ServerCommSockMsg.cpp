@@ -161,6 +161,7 @@ DWORD WINAPI ServerWorkerThread(LPVOID CompletionPortID)
 
 								*(pszEnd - nPos - 1) = '\0';
 
+								//数据库相关消息
 								if (lpSendUserData->DefMsg.wIdent >= 100 && lpSendUserData->DefMsg.wIdent <= 200)
 								{
 									lpSendUserData->pServerInfo = pServerInfo;
@@ -216,6 +217,7 @@ DWORD WINAPI ServerWorkerThread(LPVOID CompletionPortID)
 									g_DBMsgQ.PushQ((BYTE *)lpSendUserData);
 								}
 								else
+									//服务器相关消息
 									g_ServerMsgQ.PushQ((BYTE *)lpSendUserData);
 							}
 							else

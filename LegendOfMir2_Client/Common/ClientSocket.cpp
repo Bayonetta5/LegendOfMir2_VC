@@ -39,7 +39,7 @@ BOOL CClientSocket::ConnectToServer(HWND hWnd, CHAR* szID, INT nPort)
 
 	if ( m_sockClient == INVALID_SOCKET )
 	{
-		m_sockClient = socket(AF_INET, SOCK_STREAM, 0);
+		m_sockClient = socket(AF_INET, SOCK_STREAM,0);
 
 		if ( m_sockClient == INVALID_SOCKET )
 		{
@@ -291,6 +291,7 @@ LRESULT CClientSocket::OnSocketMessage(WPARAM wParam, LPARAM lParam)
 		{
 			int		nRecv, nCurRecv = 0;
 
+			//ÓÎÏ·¹ý³Ì
 			if (g_bProcState == _GAME_PROC)
 			{
 				ioctlsocket((SOCKET)wParam, FIONREAD, (u_long *)&nRecv);

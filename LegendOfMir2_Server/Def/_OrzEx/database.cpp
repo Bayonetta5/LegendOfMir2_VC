@@ -167,6 +167,7 @@ bool CConnection::Init( SQLHENV hEnv, char *pDSN, char *pID, char *pPassword )
 						  (byte *) pDSN, SQL_NTS, 
 						  (byte *) pID, SQL_NTS, 
 						  (byte *) pPassword, SQL_NTS );
+	DWORD err = GetLastError();
 	if ( nResult != SQL_SUCCESS )
 	{
 		CDatabase::DiagRec( SQL_HANDLE_DBC, m_hDBConn );

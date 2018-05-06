@@ -431,7 +431,7 @@ void CLoginProcess::OnSocketMessageRecieve(char *pszMsg)
 
 	switch(tdm.wIdent)
 	{
-		// ID Not Found
+		//账号未找到
 		case SM_ID_NOTFOUND:
 		{
 			m_Progress	= PRG_LOGIN;
@@ -439,7 +439,7 @@ void CLoginProcess::OnSocketMessageRecieve(char *pszMsg)
 			m_xMsgBox.ShowMessageBox(m_szErrorMsg, 1, _WNDIMGINDX_MSGBOX1);
 			break;
 		}
-		// Incorrect Password
+		// 密码错误
 		case SM_PASSWD_FAIL:
 		{
 			m_Progress	= PRG_LOGIN;
@@ -452,14 +452,14 @@ void CLoginProcess::OnSocketMessageRecieve(char *pszMsg)
 			m_xMsgBox.ShowMessageBox(m_szErrorMsg, 1, _WNDIMGINDX_MSGBOX1);
 			break;
 		}
-
+		// 认证失败
 		case SM_CERTIFICATION_FAIL:
 		{
 			SetErrorMessage(FATAL_ERROR_STR,m_szErrorMsg);
 			m_xMsgBox.ShowMessageBox(m_szErrorMsg, 1, _WNDIMGINDX_MSGBOX1);			// 侩扁
 			break;
 		}
-
+		//登陆成功 准备选择服务器列表
 		case SM_PASSOK_SELECTSERVER:
 		{
 			m_xSelectSrv.OpenWnd();
@@ -469,7 +469,7 @@ void CLoginProcess::OnSocketMessageRecieve(char *pszMsg)
 
 			break;
 		}
-
+		//创建账户成功
 		case SM_NEWID_SUCCESS:	
 		{
 			m_Progress = PRG_LOGIN;
@@ -481,7 +481,7 @@ void CLoginProcess::OnSocketMessageRecieve(char *pszMsg)
 			m_xMsgBox.ShowMessageBox(m_szErrorMsg, 1, _WNDIMGINDX_MSGBOX1);
 			break;
 		}
-		// New ID Create Fail
+		//创建账户失败
 		case SM_NEWID_FAIL:
 		{
 			m_Progress	= PRG_NEW_ACCOUNT;
@@ -502,19 +502,19 @@ void CLoginProcess::OnSocketMessageRecieve(char *pszMsg)
 			m_xMsgBox.ShowMessageBox(m_szErrorMsg, 1, _WNDIMGINDX_MSGBOX1);
 			break;
 		}
-		// Change Password Success
+		// 修改密码成功
 		case SM_CHGPASSWD_SUCCESS:
 		{
 			m_Progress	= PRG_LOGIN;
 			break;
 		}
-		// Change Passsword Fail
+		// 修改密码失败
 		case SM_CHGPASSWD_FAIL:
 		{
 			m_Progress	= PRG_CHANGE_PASS;	
 			break;	
 		}
-
+		//选择服务器成功
 		case SM_SELECTSERVER_OK:
 		{
 			char szDecodeMsg[256];
@@ -546,7 +546,7 @@ void CLoginProcess::OnSocketMessageRecieve(char *pszMsg)
 			}
 			break;
 		}
-		// Connection Lost(close Connection)
+		// 连接呗拒绝
 		case	SM_OUTOFCONNECTION:
 		{
 			m_Progress	= PRG_QUIT;									// Quit for Some Reason		橇肺弊伐 辆丰

@@ -663,7 +663,7 @@ void CCharacterProcess::OnSocketMessageRecieve(char* pszMsg)
 		}
 		break;
 	}
-	return 0L; 
+	//return 0L; 
 }
 		/**/
 VOID CCharacterProcess::RenderScene(INT nLoopTime)

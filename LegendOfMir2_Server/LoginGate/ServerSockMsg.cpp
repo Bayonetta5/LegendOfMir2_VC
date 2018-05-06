@@ -125,11 +125,11 @@ DWORD WINAPI ServerWorkerThread(LPVOID CompletionPortID)
 										&dwBytesTransferred, 
 										(LPDWORD)&pSessionInfo, 										
 										(LPOVERLAPPED *)&lpPerIoData, 
-										INFINITE) == 0)
+										INFINITE) == FALSE)
 		{
 			if (g_fTerminated)
 				return 0;
-
+			//IOCP失败的话向服务器发送关闭用户的消息
 			if (pSessionInfo)
 			{
 				szMsg[0] = '%';
@@ -158,6 +158,7 @@ DWORD WINAPI ServerWorkerThread(LPVOID CompletionPortID)
 		if (g_fTerminated)
 			return 0;
 
+		//客户端套接字已关闭则向服务端发送关闭用户的消息
 		if (dwBytesTransferred == 0)
 		{
 			szMsg[0] = '%';
@@ -185,7 +186,7 @@ DWORD WINAPI ServerWorkerThread(LPVOID CompletionPortID)
 
 		// ORZ:
 		pSessionInfo->bufLen += dwBytesTransferred;
-
+		//判断是否存在完成的消息
 		while ( pSessionInfo->HasCompletionPacket() )
 		{
 			szPacket[0]	= '%';
@@ -195,11 +196,11 @@ DWORD WINAPI ServerWorkerThread(LPVOID CompletionPortID)
 			pszPos		= pSessionInfo->ExtractPacket( pszPos );
 			*pszPos++	= '$';
 			*pszPos		= '\0';
-
+			//将客户端消息发送给登陆服务器
 			SendExToServer( szPacket );
 		}
 
-		// ORZ:
+		// 继续接收消息
 		if ( pSessionInfo->Recv() == SOCKET_ERROR && WSAGetLastError() != ERROR_IO_PENDING )
 		{
 				InsertLogMsg(_TEXT("WSARecv() failed"));

@@ -108,11 +108,12 @@ DWORD WINAPI ServerWorkerThread(LPVOID CompletionPortID)
 									&dwBytesTransferred, 
 									(LPDWORD)&pGateInfo, 
 									(LPOVERLAPPED *)&lpOverlapped, 
-									INFINITE) == 0 )
+									INFINITE) == FALSE )
 		{
 			return 0;
 		}
 
+		//如果已经关闭服务器
 		if (g_fTerminated)
 		{
 			PLISTNODE		pListNode;
@@ -138,6 +139,7 @@ DWORD WINAPI ServerWorkerThread(LPVOID CompletionPortID)
 			return 0;
 		}
 		
+		//如果socket发生io异常
 		if ( dwBytesTransferred == 0 )
 		{
 			pGateInfo->Close();
@@ -146,6 +148,7 @@ DWORD WINAPI ServerWorkerThread(LPVOID CompletionPortID)
 
 		pGateInfo->bufLen += dwBytesTransferred;
 
+		//校验是否存在完成的数据包
 		while ( pGateInfo->HasCompletionPacket() )
 		{
 			*(pGateInfo->ExtractPacket( szTmp ) - 1) = '\0';
@@ -153,22 +156,22 @@ DWORD WINAPI ServerWorkerThread(LPVOID CompletionPortID)
 			switch ( szTmp[1] )
 			{
 				case '-':
-					pGateInfo->SendKeepAlivePacket();
+					pGateInfo->SendKeepAlivePacket();//登陆网关与登陆服务器的心跳包
 					break;
 				case 'A':
-					pGateInfo->ReceiveSendUser(&szTmp[2]);
+					pGateInfo->ReceiveSendUser(&szTmp[2]);//接收发送用户
 					break;
 				case 'O':
-					pGateInfo->ReceiveOpenUser(&szTmp[2]);
+					pGateInfo->ReceiveOpenUser(&szTmp[2]);//打开一个用户
 					break;
 				case 'X':
-					pGateInfo->ReceiveCloseUser(&szTmp[2]);
+					pGateInfo->ReceiveCloseUser(&szTmp[2]);//关闭一个用户
 					break;
 				case 'S':
-					pGateInfo->ReceiveServerMsg(&szTmp[2]);
+					pGateInfo->ReceiveServerMsg(&szTmp[2]);//选择服务器相关消息
 					break;
 				case 'M':
-					pGateInfo->MakeNewUser(&szTmp[2]);
+					pGateInfo->MakeNewUser(&szTmp[2]);//创建一个新的用户
 					break;
 			}
 		}

@@ -71,7 +71,7 @@ LPARAM OnClientSockMsg(WPARAM wParam, LPARAM lParam)
 			UINT nRecv = 0;
 
 			ioctlsocket((SOCKET)wParam, FIONREAD, (u_long *)&nRecv);
-
+			//将登陆服务器的消息放入队列
 			if (nRecv)
 			{
 				char *pszPacket = new char[nRecv + 1];
@@ -91,6 +91,7 @@ LPARAM OnClientSockMsg(WPARAM wParam, LPARAM lParam)
 	return 0L;
 }
 
+//发送扩展信息到登陆服务器
 void SendExToServer(char *pszPacket)
 {
 	DWORD	dwSendBytes;

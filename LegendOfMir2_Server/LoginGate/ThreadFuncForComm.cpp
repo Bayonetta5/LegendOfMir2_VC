@@ -20,6 +20,7 @@ VOID WINAPI OnTimerProc(HWND hWnd, UINT uMsg, UINT_PTR idEvent, DWORD dwTime)
 		{
 			if (g_csock != INVALID_SOCKET)
 			{
+				//关闭连接
 				SendExToServer(PACKET_KEEPALIVE);
 				SendMessage(g_hStatusBar, SB_SETTEXT, MAKEWORD(2, 0), (LPARAM)_TEXT("Check Activity"));
 			}
@@ -39,7 +40,7 @@ VOID WINAPI OnTimerProc(HWND hWnd, UINT uMsg, UINT_PTR idEvent, DWORD dwTime)
 
 				if (!jRegGetKey(_LOGINGATE_SERVER_REGISTRY, _TEXT("RemotePort"), (LPBYTE)&nPort))
 					nPort = 5000;
-
+				//连接到登陆服务器
 				ConnectToServer(g_csock, &g_caddr, _IDM_CLIENTSOCK_MSG, NULL, dwIP, nPort, FD_CONNECT|FD_READ|FD_CLOSE);
 			}
 

@@ -89,21 +89,21 @@ public:
 
 	__inline void SetEffectLoaded(BYTE bSkillNum)
 	{	SetLoad(m_nLoadedEffect, _MAX_EFFECT, bSkillNum, TRUE);		}
-	__inline FreeEffectLoaded(BYTE bSkillNum)
+	__inline void FreeEffectLoaded(BYTE bSkillNum)
 	{	SetLoad(m_nLoadedEffect, _MAX_EFFECT, bSkillNum, FALSE);	}
 	__inline int EffectLoaded(BYTE bSkillNum)
 	{	return CheckList(m_nLoadedEffect, _MAX_EFFECT, bSkillNum);	}
 
 	__inline void SetMagicLoaded(BYTE bSkillNum)
 	{	SetLoad(m_nLoadedMagic, _MAX_MAGIC, bSkillNum, TRUE);		}
-	__inline FreeMagicLoaded(BYTE bSkillNum)
+	__inline void FreeMagicLoaded(BYTE bSkillNum)
 	{	SetLoad(m_nLoadedMagic, _MAX_MAGIC, bSkillNum, FALSE);		}
 	__inline int MagicLoaded(BYTE bSkillNum)
 	{	return CheckList(m_nLoadedMagic, _MAX_MAGIC, bSkillNum);	}
 
 	__inline void SetExplodeLoaded(BYTE bSkillNum)
 	{	SetLoad(m_nLoadedExplode, _MAX_EXPLOSION, bSkillNum, TRUE); }
-	__inline FreeExplodeLoaded(BYTE bSkillNum)
+	__inline void FreeExplodeLoaded(BYTE bSkillNum)
 	{	SetLoad(m_nLoadedExplode, _MAX_EXPLOSION, bSkillNum, FALSE);}
 	__inline int ExplodeLoaded(BYTE bSkillNum)
 	{	return CheckList(m_nLoadedExplode,_MAX_EXPLOSION,bSkillNum);}

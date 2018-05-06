@@ -190,10 +190,10 @@ BOOL InitInstance(HANDLE hInstance, int nCmdShow)
 	jRegGetKey(_DB_SERVER_REGISTRY, _TEXT("Device"), (LPBYTE)wszDatabase);
 	WideCharToMultiByte(CP_ACP, 0, wszDatabase, -1, szDatabase, sizeof(szDatabase), NULL, NULL);
 
-	GetDBManager()->Init( InsertLogMsg, szDatabase, "sa", "prg" );
+	GetDBManager()->Init( InsertLogMsg, szDatabase, "sa", "95938" );
 
 	// 테이블 읽기
-	CConnection *pConn = GetDBManager()->m_dbMain.CreateConnection( "Mir2_Common", "sa", "prg" );
+	CConnection *pConn = GetDBManager()->m_dbMain.CreateConnection( "Mir2_Common", "sa", "95938" );
 	if ( pConn )
 	{
 		if ( !GetTblStartPoint()->Init( pConn ) )

@@ -80,7 +80,7 @@ LPARAM OnClientSockMsg(WPARAM wParam, LPARAM lParam)
 				nRecv = recv((SOCKET)wParam, pszPacket, nRecv, 0);
 
 				pszPacket[nRecv] = '\0';
-
+				//将服务器返回的消息放入消息队列
 				if (!(g_xMsgQueue.PushQ((BYTE *)pszPacket)))
 					InsertLogMsg(_TEXT("[INFO] Not enough queue(g_xMsgQueue) buffer."));
 			}
@@ -92,6 +92,9 @@ LPARAM OnClientSockMsg(WPARAM wParam, LPARAM lParam)
 	return 0L;
 }
 
+/************************************************************************/
+/* 给服务器发送消息                                                                     */
+/************************************************************************/
 void SendExToServer(char *pszPacket)
 {
 /*	int		nTotalSendBytes = 0;

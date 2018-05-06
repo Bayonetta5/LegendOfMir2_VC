@@ -104,6 +104,8 @@ void OnCommand(WPARAM wParam, LPARAM lParam)
 			LoadCharacterRecords();
 
 			InitServerSocket(g_ssock, &g_saddr, _IDM_GATECOMMSOCK_MSG, 6000, 1);
+
+			//数据库服务器网关端口
 			InitGateCommSocket(g_gssock, &g_gsaddr, _IDM_GATECOMMSOCK_MSG, 5100, FD_ACCEPT|FD_READ|FD_CLOSE);
 
 			UINT			dwThreadIDForMsg = 0;

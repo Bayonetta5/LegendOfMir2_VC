@@ -17,12 +17,14 @@ UINT WINAPI ThreadFuncForMsg(LPVOID lpParameter)
 		{
 			pListNode = g_xGateList.GetHead();
 
+			//循环每一个网关列表 将网关列表中待发送的数据包发送出去
 			while (pListNode)
 			{
 				pGateInfo = g_xGateList.GetData(pListNode);
 
 				if (pGateInfo)
 				{
+					//判断需要发送到网关的队列是否为空
 					nCount = pGateInfo->g_SendToGateQ.GetCount();
 
 					if (nCount)

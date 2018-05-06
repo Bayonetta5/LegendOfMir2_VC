@@ -13,6 +13,9 @@ int CompareDBString( char *str1, char *str2 )
 	return strcmp( str1, str2 );
 }
 
+/************************************************************************/
+/* 获取认证id                                                                     */
+/************************************************************************/
 int GetCertification() 
 { 
 	static long	g_nCertification = 30;
@@ -37,6 +40,9 @@ int GetCertification()
 
    ************************************************************************************** */
 
+/************************************************************************/
+/* 关闭网关                                                                     */
+/************************************************************************/
 void CGateInfo::Close()
 {
 	PLISTNODE		pListNode;
@@ -80,6 +86,9 @@ void CGateInfo::Close()
 
    ************************************************************************************** */
 
+/************************************************************************/
+/* 发送到登陆网关                                                                     */
+/************************************************************************/
 void CGateInfo::SendToGate(SOCKET cSock, char *pszPacket)
 {
 	char	szData[256];
@@ -121,6 +130,9 @@ void CGateInfo::SendToGate(SOCKET cSock, char *pszPacket)
 
    ************************************************************************************** */
 
+/************************************************************************/
+/* 新增一个用户                                                                     */
+/************************************************************************/
 void CGateInfo::MakeNewUser(char *pszPacket)
 {
 	char				szDecodeMsg[256];
@@ -184,7 +196,9 @@ void CGateInfo::MakeNewUser(char *pszPacket)
 		NOTE
 
    ************************************************************************************** */
-
+/************************************************************************/
+/* 接收数据库服务器信息                                                                     */
+/************************************************************************/
 void CGateInfo::ReceiveServerMsg(char *pszPacket)
 {
 	char		*pszPos;
@@ -207,6 +221,9 @@ void CGateInfo::ReceiveServerMsg(char *pszPacket)
 	}
 }
 
+/************************************************************************/
+/* 接收打开一个用户                                                                     */
+/************************************************************************/
 void CGateInfo::ReceiveOpenUser(char *pszPacket)
 {
 	char	*pszPos;
@@ -250,6 +267,9 @@ void CGateInfo::ReceiveOpenUser(char *pszPacket)
 
    ************************************************************************************** */
 
+/************************************************************************/
+/* 关闭一个用户                                                                     */
+/************************************************************************/
 void CGateInfo::ReceiveCloseUser(char *pszPacket)
 {
 	int nSocket = AnsiStrToVal(pszPacket);
@@ -264,7 +284,9 @@ void CGateInfo::ReceiveCloseUser(char *pszPacket)
 		NOTE
 
    ************************************************************************************** */
-
+/************************************************************************/
+/* 接收发送一个用户                                                                     */
+/************************************************************************/
 void CGateInfo::ReceiveSendUser(char *pszPacket)
 {
 	char	*pszPos;
@@ -296,7 +318,9 @@ void CGateInfo::ReceiveSendUser(char *pszPacket)
 		NOTE
 
    ************************************************************************************** */
-
+/************************************************************************/
+/* 处理选择服务器                                                                     */
+/************************************************************************/
 void CGateInfo::ProcSelectServer(SOCKET s, WORD wServerIndex)
 {
 	_TDEFAULTMESSAGE	DefMsg;
@@ -365,7 +389,9 @@ void CGateInfo::ProcSelectServer(SOCKET s, WORD wServerIndex)
 		NOTE
 
    ************************************************************************************** */
-
+/************************************************************************/
+/* 解析用户实体数据                                                                     */
+/************************************************************************/
 bool CGateInfo::ParseUserEntry( char *buf, _AUSERENTRYINFO *userInfo )
 {
 	char seps[] = "\001";
@@ -415,7 +441,9 @@ bool CGateInfo::ParseUserEntry( char *buf, _AUSERENTRYINFO *userInfo )
 		NOTE
 
    ************************************************************************************** */
-
+/************************************************************************/
+/* 处理添加新的用户                                                                     */
+/************************************************************************/
 void CGateInfo::ProcAddUser(SOCKET s, char *pszData)
 {
 	char				szEntryInfo[2048];
@@ -499,7 +527,9 @@ void CGateInfo::ProcAddUser(SOCKET s, char *pszData)
 		NOTE
 
    ************************************************************************************** */
-
+/************************************************************************/
+/* 处理登陆                                                                     */
+/************************************************************************/
 void CGateInfo::ProcLogin(SOCKET s, char *pszData)
 {
 	char				szIDPassword[32];
@@ -547,6 +577,7 @@ void CGateInfo::ProcLogin(SOCKET s, char *pszData)
 						fnMakeDefMessageA(&DefMsg, SM_CERTIFICATION_FAIL, 1, 0, 0, 0);
 					else
 					{
+						//登陆成功向网关发送选择服务器消息
 						char szEncodeServerList[512];
 						char szEncodeAllPacket[1024];
 						
@@ -582,7 +613,7 @@ void CGateInfo::ProcLogin(SOCKET s, char *pszData)
 
 				nPos = fnEncodeMessageA(&DefMsg, szEncodePacket, sizeof(szEncodePacket));
 				szEncodePacket[nPos] = '\0';
-
+				//登陆不成功发送相关消息
 				SendToGate(s, szEncodePacket);
 			}
 		}

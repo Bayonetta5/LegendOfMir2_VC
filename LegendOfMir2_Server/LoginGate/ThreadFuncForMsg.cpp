@@ -7,6 +7,9 @@ extern SOCKET							g_csock;
 extern CWHQueue							g_xMsgQueue;
 extern CWHList<CSessionInfo*>			g_xSessionList;
 
+/************************************************************************/
+/* 处理登陆服务器返回的消息队列中的消息                                                                     */
+/************************************************************************/
 DWORD WINAPI ThreadFuncForMsg(LPVOID lpParameter)
 {
 	char			szData[DATA_BUFSIZE];
@@ -49,7 +52,8 @@ DWORD WINAPI ThreadFuncForMsg(LPVOID lpParameter)
 			{
 				pszData = (char *)g_xMsgQueue.PopQ();
 
-				if (!pszData) continue;
+				if (!pszData) 
+					continue;
 
 				if (pszFirst)
 				{
@@ -87,6 +91,7 @@ DWORD WINAPI ThreadFuncForMsg(LPVOID lpParameter)
 							{
 								pszEnd++;
 
+								//取出消息中的客户端套接字 然后直接发送给客户端
 								if (nSocket = AnsiStrToVal(pszFirst + 1))
 								{
 									Buf.len	= memlen(pszEnd) - 1;

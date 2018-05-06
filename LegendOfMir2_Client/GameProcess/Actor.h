@@ -69,8 +69,8 @@ public:
 	WORD				m_wOldPosX;						// 현재 행동이 있기전의 타일X좌표.
 	WORD				m_wOldPosY;
 	BYTE				m_bOldDir;						// 현재 행동이 있기전의 방향.
-	WORD				m_wPosX;						// 타일 X좌표.
-	WORD				m_wPosY;						// 타일 Y좌표.
+	WORD				m_wPosX;						// X菉
+	WORD				m_wPosY;						// Y菉
 	SHORT				m_shShiftPixelX;				// 현재 자신의 타일에서 X축만큼 이동한 픽셀의 거리.
 	SHORT				m_shShiftPixelY;				// 현재 자신의 타일에서 Y축만큼 이동한 픽셀의 거리.
 	SHORT				m_shShiftTileX;					// 현재 자신의 타일에서 X축만큼 이동한 타일의 거리.

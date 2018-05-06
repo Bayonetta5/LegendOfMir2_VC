@@ -868,6 +868,7 @@ BOOL CMapHandler::GetNextTileCanMove(INT nXPos, INT nYPos, BYTE bDir, INT nGap, 
 
 	nXGapPos = nYGapPos = 0;
 
+	//检测地图是否可以移动
 	switch ( bDir )
 	{
 	case _DIRECTION_LIST_1:
@@ -934,6 +935,7 @@ BOOL CMapHandler::GetNextTileCanMove(INT nXPos, INT nYPos, BYTE bDir, INT nGap, 
 	if ( bCanMove != _CAN_WALK )
 		return FALSE;
 
+	//检测地图上的所有对象是否可以移动
 	if ( g_xGameProc.m_xActorList.GetCounter() != 0 )
 	{
 		g_xGameProc.m_xActorList.MoveCurrentToTop();

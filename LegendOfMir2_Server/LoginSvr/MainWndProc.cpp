@@ -99,7 +99,7 @@ UINT WINAPI LoadAccountRecords(LPVOID lpParameter)
 	// ----------------------------------------------------------------------------------------
 
 	GAMESERVERINFO *pServerInfo;
-
+	//加载服务器列表
 	pRec = GetDBManager()->CreateRecordset();
 	if ( pRec->Execute( "SELECT * FROM TBL_SERVERINFO" ) )
 	{

@@ -9,6 +9,9 @@ extern CWHList<CSessionInfo*>			g_xSessionList;
 
 extern BOOL								g_fTerminated;
 
+/************************************************************************/
+/* 处理消息队列中的消息                                                                     */
+/************************************************************************/
 DWORD WINAPI ThreadFuncForMsg(LPVOID lpParameter)
 {
 	char			szData[DATA_BUFSIZE];
@@ -93,7 +96,7 @@ DWORD WINAPI ThreadFuncForMsg(LPVOID lpParameter)
 								{
 									Buf.len	= memlen(pszEnd) - 1;
 									Buf.buf	= pszEnd;
-
+									
 									WSASend((SOCKET)nSocket, &Buf, 1, &dwSendBytes, 0, NULL, NULL);
 //									send((SOCKET)nSocket, pszEnd, memlen(pszEnd) - 1, 0);
 								}

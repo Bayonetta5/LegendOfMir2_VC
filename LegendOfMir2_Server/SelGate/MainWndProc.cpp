@@ -92,11 +92,11 @@ void OnCommand(WPARAM wParam, LPARAM lParam)
 
 			InitServerSocket(g_ssock, &g_saddr, _IDM_SERVERSOCK_MSG, nPort, 2);
 
+			//连接到数据库服务器
 			jRegGetKey(_SELGATE_SERVER_REGISTRY, _TEXT("RemoteIP"), (LPBYTE)&dwIP);
-
 			if (!jRegGetKey(_SELGATE_SERVER_REGISTRY, _TEXT("RemotePort"), (LPBYTE)&nPort))
 				nPort = 5100;
-
+			//连接到数据库服务器
 			ConnectToServer(g_csock, &g_caddr, _IDM_CLIENTSOCK_MSG, NULL, dwIP, nPort, FD_CONNECT|FD_READ|FD_CLOSE);
 
 			HMENU hMainMenu = GetMenu(g_hMainWnd);
